@@ -1,0 +1,220 @@
+═══════════════════════════════════════════════════════
+PROMPT TẠO NỘI DUNG CHO TEMPIL.COM.VN
+Dùng cho: ChatGPT Plus / Gemini Advanced
+═══════════════════════════════════════════════════════
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+THÔNG TIN CỐ ĐỊNH — PASTE VÀO ĐẦU MỌI PROMPT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Bạn là chuyên gia SEO và kỹ thuật hàn công nghiệp tại Việt Nam.
+Website: tempil.com.vn — Blog kỹ thuật, dẫn người dùng mua tại tempil.vn
+Công ty: Fast Group Engineering (Công ty TNHH Fast Group) — Nhà phân phối 
+chính thức Tempil tại Việt Nam
+MST: 0315555189 | VP HCM: 150 Nguyễn Cư Trinh, P. Cầu Ông Lãnh, Q.1
+VP Vũng Tàu: 51 Lê Văn Lộc, P. Vũng Tàu | Tel: 0938 888 958
+Email: sales@markal.com.vn | Mua hàng: tempil.vn
+Màu chủ đạo: Đỏ Tempil #c8102e và #8b1a1a
+Hero color CSS: background:linear-gradient(135deg,#1a0a0a 0%,#8b1a1a 100%)
+H2 color: #1a0a0a | H3 color: #c8102e
+Highlight box: background:#fff0f0; border-left:4px solid #c8102e
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NHÓM 1 — 5 TRANG SẢN PHẨM (san-pham/)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[TRANG SẢN PHẨM TEMPILSTIK]
+URL: /san-pham/tempilstik/
+Viết trang sản phẩm HTML hoàn chỉnh cho Tempilstik® với:
+- Title SEO (≤60 ký tự): "Tempilstik® Chính Hãng - Que Chỉ Thị Nhiệt Độ Hàn | Tempil VN"
+- Meta description (130-155 ký tự) có từ khóa: Tempilstik, que chỉ thị nhiệt độ, preheat
+- H1: Tempilstik® — Que Chỉ Thị Nhiệt Độ Tiêu Chuẩn AWS & ASME
+- Nội dung: Mô tả sản phẩm, thông số kỹ thuật (±1°F, 38°C–1093°C, 105+ mức), 
+  cách sử dụng 6 bước, bảng chọn mức nhiệt theo loại thép
+- Ảnh dùng: /assets/images/tempilstik_1.webp và tempilstik_test_kit_0.webp
+- CTA: Link về https://tempil.vn để mua hàng
+- Schema: Product JSON-LD
+- Related: Link về /blog/tempilstik-la-gi-huong-dan-su-dung/
+- Canonical: https://tempil.com.vn/san-pham/tempilstik/
+- Dùng template HTML từ THÔNG TIN CỐ ĐỊNH ở trên
+
+---
+
+[TRANG SẢN PHẨM TEMPILAQ]
+URL: /san-pham/tempilaq/
+Title: "Tempilaq® Advanced - Sơn Chỉ Thị Nhiệt Độ Lỏng | Tempil VN"
+H1: Tempilaq® Advanced — Sơn Lỏng Chỉ Thị Nhiệt Độ Cho Bề Mặt Phức Tạp
+Từ khóa: Tempilaq, sơn chỉ thị nhiệt độ, liquid temperature indicator
+Ảnh: /assets/images/tempilaq_advanced_0.webp và tempilaq_advanced_1.webp
+Thông số: 79°C–670°C, dạng lỏng, dùng cọ quét hoặc nhỏ giọt
+Ứng dụng: Rãnh sâu, bề mặt phức tạp không thể dùng Tempilstik
+
+---
+
+[TRANG SẢN PHẨM TEMPILABEL]  
+URL: /san-pham/tempilabel/
+Title: "Tempilabel® - Nhãn Chỉ Thị Nhiệt Độ Tự Dính | Tempil VN"
+H1: Tempilabel® — Nhãn Giám Sát Nhiệt Độ Liên Tục Cho Thiết Bị Điện & Cơ Khí
+Từ khóa: Tempilabel, nhãn nhiệt độ, temperature monitor sticker
+Ảnh: /assets/images/tempilabels.png và series_21_tempilabel_2.webp
+Ứng dụng: Tủ điện, động cơ, thiết bị cơ khí cần giám sát nhiệt liên tục
+
+---
+
+[TRANG SẢN PHẨM THERMOMELT]
+URL: /san-pham/thermomelt/
+Title: "Thermomelt® - Que Chỉ Thị Nhiệt Cao Chính Hãng | Tempil VN"  
+H1: Thermomelt® — Chỉ Thị Nhiệt Độ Cao Cho Lò Nung & Luyện Kim
+Ảnh: /assets/images/thermomelt_0.webp và thermomelt_2.webp
+Ứng dụng: Lò nung, nhiệt luyện, nhiệt độ cao hơn Tempilstik thông thường
+
+---
+
+[TRANG TẤT CẢ SẢN PHẨM]
+URL: /san-pham/
+Title: "Sản Phẩm Tempil Chính Hãng tại Việt Nam | Fast Group Engineering"
+H1: Toàn Bộ Sản Phẩm Tempil Chính Hãng Made in USA
+Nội dung: Grid 6 sản phẩm (Tempilstik, Tempilaq, Tempilabel, Thermomelt, 
+Temp-Alarm, Thermax) với ảnh, mô tả ngắn và link chi tiết
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NHÓM 2 — 5 BÀI BLOG KỸ THUẬT (blog/)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LƯU Ý QUAN TRỌNG CHO TẤT CẢ BÀI BLOG:
+- Khác hoàn toàn với bài viết trên markal.com.vn (không copy)
+- Chuyên sâu hơn về kỹ thuật hàn
+- Thêm tiếng Anh cho thuật ngữ kỹ thuật (preheat, interpass, PWHT...)
+- Cuối bài CTA link về https://tempil.vn để mua hàng
+- Internal link về các trang sản phẩm /san-pham/tempilstik/
+
+---
+
+[BÀI BLOG 1]
+URL: /blog/tempilstik-la-gi-huong-dan-su-dung/
+Title (≤60): "Tempilstik Là Gì? Hướng Dẫn Sử Dụng Tại Hiện Trường"
+Meta desc: Tempilstik là gì, nguyên lý hoạt động, cách vạch đúng vị trí 
+theo AWS D1.1, đọc kết quả và ghi nhật ký kiểm định. Hướng dẫn thực tế.
+Từ khóa chính: "Tempilstik là gì", "que chỉ thị nhiệt độ hàn", "cách dùng Tempilstik"
+Nội dung 700-900 từ có:
+- Giải thích Tempilstik là gì, cấu tạo
+- Nguyên lý: sáp tan chảy = đạt nhiệt độ
+- Hướng dẫn 6 bước sử dụng tại hiện trường
+- Vị trí đo đúng theo AWS D1.1 (75mm từ mép hàn)
+- Cách ghi nhật ký welding log
+- Bảng so sánh vs nhiệt kế laser
+Ảnh: tempilstik_1.webp (banner), tempilstik_test_kit_0.webp
+
+---
+
+[BÀI BLOG 2]  
+URL: /blog/nhiet-do-tien-han-theo-aws-d1-1/
+Title: "Bảng Nhiệt Độ Tiền Hàn AWS D1.1 - Tra Cứu Theo Loại Thép"
+Meta desc: Bảng tra cứu nhiệt độ tiền hàn (preheat) đầy đủ theo AWS D1.1 
+cho thép A36, A572, thép hợp kim P11, P22, P91. Chọn đúng Tempilstik.
+Từ khóa: "nhiệt độ tiền hàn AWS D1.1", "preheat temperature welding", 
+"bảng preheat thép carbon"
+Nội dung: Bảng tra cứu CHI TIẾT HƠN bài markal.com.vn — thêm:
+- Thép P5, P9, P91, P92 (chrome-moly)
+- Duplex stainless steel 2205
+- Inconel, Hastelloy  
+- Điều kiện môi trường (nhiệt độ &lt;10°C thì preheat cao hơn)
+- ASME B31.3 process piping requirements
+Ảnh: tempilstik_test_kit_2.webp
+
+---
+
+[BÀI BLOG 3]
+URL: /blog/tempilstik-vs-nhiet-ke-laser/
+Title: "Tempilstik vs Nhiệt Kế Laser - So Sánh Độ Chính Xác Đo Hàn"
+Meta desc: So sánh Tempilstik và nhiệt kế laser: độ chính xác, điều kiện 
+hiện trường, chi phí, tiêu chuẩn AWS/ASME. Kết luận rõ ràng cho kỹ sư QC.
+Từ khóa: "Tempilstik vs nhiệt kế laser", "đo nhiệt độ mối hàn chính xác"
+Nội dung KHÁC với bài markal.com.vn — thêm:
+- Giải thích emissivity problem của laser trên kim loại nóng
+- Kết quả test thực tế so sánh
+- Khi nào dùng laser, khi nào dùng Tempilstik
+- Chi phí TCO (Total Cost of Ownership)
+Ảnh: tempilstik_test_kit_0.webp
+
+---
+
+[BÀI BLOG 4]
+URL: /blog/faq-tempilstik/
+Title: "FAQ Tempilstik - 15 Câu Hỏi Thường Gặp Của Kỹ Sư Hàn"
+Meta desc: 15 câu hỏi thường gặp về Tempilstik: chọn mức nhiệt, bảo quản, 
+tuổi thọ, điều chỉnh mô men siết, sử dụng ngoài trời. Giải đáp từ chuyên gia.
+Từ khóa: "FAQ Tempilstik", "Tempilstik bao nhiêu tiền", "chọn Tempilstik"
+PHẢI KHÁC bài FAQ trên markal.com.vn — thêm:
+- Câu hỏi bằng tiếng Anh cho kỹ sư nước ngoài
+- FAQ về xuất xứ, chứng từ C/O
+- FAQ về interpass temperature
+- FAQ cho ngành dầu khí và hạt nhân
+Schema: FAQPage JSON-LD với 15 cặp Q&A
+
+---
+
+[BÀI BLOG 5]
+URL: /blog/ung-dung-tempilstik-nganh-han/
+Title: "Ứng Dụng Tempilstik Trong 6 Ngành Công Nghiệp Hàn Lớn Nhất VN"
+Meta desc: Ứng dụng Tempilstik trong đóng tàu, dầu khí, nồi hơi, nhà máy 
+điện, hóa chất và xây dựng kết cấu thép tại Việt Nam. Case study thực tế.
+Từ khóa: "ứng dụng Tempilstik", "kiểm tra nhiệt độ hàn công nghiệp"
+Nội dung MỚI HOÀN TOÀN — tập trung vào:
+- Case study từng ngành tại Việt Nam
+- Yêu cầu tiêu chuẩn riêng từng ngành
+- Mức Tempilstik phổ biến nhất từng ngành
+- Chi phí tiết kiệm thực tế khi dùng Tempilstik đúng cách
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NHÓM 3 — TRANG LIÊN HỆ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[CONTACT PAGE]
+URL: /contact.html
+Title: "Liên Hệ Mua Tempilstik Chính Hãng | Fast Group Engineering"
+H1: Liên hệ & Nhận báo giá Tempilstik chính hãng
+Nội dung:
+- Form liên hệ (họ tên, email, điện thoại, sản phẩm quan tâm, nội dung)
+- Thông tin công ty đầy đủ
+- NÚT NỔI BẬT: "Mua ngay tại tempil.vn" → link https://tempil.vn
+- Google Maps embed VP HCM
+Schema: LocalBusiness JSON-LD đầy đủ
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NHÓM 4 — BLOG INDEX
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[TRANG DANH SÁCH BLOG]
+URL: /blog/
+Title: "Blog Kỹ Thuật Hàn & Kiểm Soát Nhiệt Độ | Tempil Việt Nam"
+H1: Blog Kỹ Thuật — Kiến Thức Hàn & Kiểm Soát Nhiệt Độ
+Hiển thị 5 bài blog dạng card với ảnh, tag, tiêu đề, mô tả ngắn
+Màu đỏ Tempil #c8102e cho tag và link
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HƯỚNG DẪN HTML TEMPLATE — COPY VÀO MỖI PROMPT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Mỗi file HTML cần có:
+1. Sidebar navigation với các link:
+   / | /san-pham/tempilstik/ | /san-pham/tempilaq/ | 
+   /san-pham/tempilabel/ | /san-pham/ | /blog/ | /contact.html |
+   https://tempil.vn (Mua hàng - màu đỏ, font-weight:600)
+
+2. Footer với:
+   - Logo + mô tả công ty
+   - VP1, VP2, Kho, Tel, Email, Link tempil.vn
+   - Copyright: © 2026 Công ty TNHH Fast Group | MST: 0315555189
+
+3. CSS màu Tempil:
+   --tempil-red: #c8102e
+   --tempil-dark: #8b1a1a
+   Sidebar background: #1a0a0a
+   Hero: linear-gradient(135deg, #1a0a0a 0%, #8b1a1a 100%)
+
+4. Schema JSON-LD phù hợp với loại trang (Article/Product/FAQ/LocalBusiness)
+
+5. Link rel="canonical" đúng URL
+
+6. Link rel="alternate" hreflang="vi" và "x-default"
