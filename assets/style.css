@@ -1,12 +1,10 @@
-@charset "utf-8";
-/* style.css — Fast Group Engineering | markal.com.vn */
+/* style.css — Fast Group Engineering | tempil.com.vn */
 
 :root {
-    /* Color Palette — Terracotta */
-    --terracotta: #1E4AA8;
+    --terracotta: #c8102e;   ← ĐỎ TEMPIL
     --cream: #F4F1DE;
     --navy: #3D405B;
-    --sage: #1E4AA8;
+    --sage: #c8102e; 
 
     /* Extended shades */
     --terracotta-light: #f0a58e;
