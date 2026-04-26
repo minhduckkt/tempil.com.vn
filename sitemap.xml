@@ -2,25 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- TRANG CHÍNH -->
+  <!-- ================================================ -->
+  <!-- TRANG CHÍNH — Priority cao nhất                  -->
+  <!-- ================================================ -->
+
   <url>
     <loc>https://tempil.com.vn/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://tempil.com.vn/contact.html</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
 
   <url>
     <loc>https://tempil.com.vn/san-pham/</loc>
@@ -28,120 +19,115 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/tempilstik/</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/tempilaq/</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/tempilabel/</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/thermomelt/</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/temp-alarm/</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/thermax/</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <!-- SẢN PHẨM -->
-  <url>
-    <loc>https://tempil.com.vn/san-pham/tempilstik/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/tempilaq/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/tempilabel/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/thermomelt/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/temp-alarm/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/thermax/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tempil.com.vn/san-pham/pyromark/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
-  <!-- BLOG -->
   <url>
     <loc>https://tempil.com.vn/blog/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://tempil.com.vn/contact.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================================ -->
+  <!-- SẢN PHẨM — Trang sản phẩm chính                 -->
+  <!-- ================================================ -->
+
+  <!-- Tempilstik — sản phẩm quan trọng nhất -->
+  <url>
+    <loc>https://tempil.com.vn/san-pham/tempilstik/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Tempilaq Advanced -->
+  <url>
+    <loc>https://tempil.com.vn/san-pham/tempilaq/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tempilabel -->
+  <url>
+    <loc>https://tempil.com.vn/san-pham/tempilabel/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Thermomelt -->
+  <url>
+    <loc>https://tempil.com.vn/san-pham/thermomelt/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Temp-Alarm -->
+  <url>
+    <loc>https://tempil.com.vn/san-pham/temp-alarm/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Thermax -->
+  <url>
+    <loc>https://tempil.com.vn/san-pham/thermax/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+
+  <!-- ================================================ -->
+  <!-- BLOG — Bài viết kỹ thuật                         -->
+  <!-- ================================================ -->
+
+  <!-- Blog 1: Tempilstik là gì — từ khóa tìm nhiều nhất -->
   <url>
     <loc>https://tempil.com.vn/blog/tempilstik-la-gi-huong-dan-su-dung/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Blog 2: Bảng nhiệt độ preheat AWS D1.1 -->
   <url>
     <loc>https://tempil.com.vn/blog/nhiet-do-tien-han-theo-aws-d1-1/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Blog 3: So sánh Tempilstik vs nhiệt kế laser -->
   <url>
     <loc>https://tempil.com.vn/blog/tempilstik-vs-nhiet-ke-laser/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
+
+  <!-- Blog 4: FAQ Tempilstik -->
   <url>
     <loc>https://tempil.com.vn/blog/faq-tempilstik/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
+
+  <!-- Blog 5: Ứng dụng ngành hàn -->
   <url>
     <loc>https://tempil.com.vn/blog/ung-dung-tempilstik-nganh-han/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
