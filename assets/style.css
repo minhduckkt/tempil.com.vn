@@ -116,7 +116,7 @@ button {
     left: 0;
     width: var(--sidebar-width);
     height: 100vh;
-    background: var(--navy);
+    background: #1a0a0a;
     color: var(--cream);
     display: flex;
     flex-direction: column;
