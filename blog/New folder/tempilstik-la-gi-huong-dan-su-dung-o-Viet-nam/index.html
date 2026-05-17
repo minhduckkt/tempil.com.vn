@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Que chỉ thị nhiệt Tempilstik® là gì? Hướng dẫn sử dụng đúng kỹ thuật tại công trường</title>
+  <meta name="description" content="Tempilstik® là que sáp chỉ thị nhiệt độ bề mặt Made in USA, tan chảy chính xác tại nhiệt độ định trước ±1°F. Hướng dẫn đo preheat đúng kỹ thuật theo AWS D1.1 và ASME tại công trường thực tế.">
+
+  <style>
+    .blog-article {
+      font-family: var(--font-body, 'Manrope', 'Segoe UI', sans-serif);
+      color: #3D405B;
+      max-width: 820px;
+      line-height: 1.75;
+      font-size: 0.97rem;
+    }
+    .blog-article h1 {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: #1a0a0a;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .blog-article h2 {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+      color: #1a0a0a;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #c8102e;
+      letter-spacing: -0.01em;
+    }
+    .blog-article h3 {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: 1.1rem;
+      color: #1a0a0a;
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.65rem;
+    }
+    .blog-article p { margin-bottom: 1rem; }
+    .blog-article a { color: #c8102e; text-decoration: none; border-bottom: 1px solid rgba(200,16,46,0.3); transition: border-color 0.2s; }
+    .blog-article a:hover { color: #a50e26; border-color: #c8102e; }
+    .blog-article ul.article-list {
+      padding: 0;
+      margin: 1rem 0 1.25rem 0;
+      list-style: none;
+    }
+    .blog-article ul.article-list li {
+      padding: 0.65rem 0 0.65rem 1.6rem;
+      border-bottom: 1px solid #f0f0f0;
+      color: #3D405B;
+      position: relative;
+      line-height: 1.6;
+    }
+    .blog-article ul.article-list li:last-child { border-bottom: none; }
+    .blog-article ul.article-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1.05rem;
+      width: 8px;
+      height: 8px;
+      background: #c8102e;
+      border-radius: 50%;
+    }
+    .blog-article ol.article-ol {
+      padding-left: 1.5rem;
+      margin: 1rem 0 1.25rem;
+    }
+    .blog-article ol.article-ol li {
+      padding: 0.5rem 0 0.5rem 0.5rem;
+      border-bottom: 1px solid #f0f0f0;
+      color: #3D405B;
+      line-height: 1.6;
+    }
+    .blog-article ol.article-ol li:last-child { border-bottom: none; }
+    .blog-article ol.article-ol li::marker { color: #c8102e; font-weight: 700; }
+    .blog-article .table-wrap {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(61,64,91,0.08);
+    }
+    .blog-article table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-body, 'Manrope', sans-serif);
+      font-size: 0.88rem;
+    }
+    .blog-article table thead tr {
+      background: #c8102e;
+      color: #fff;
+    }
+    .blog-article table th {
+      padding: 0.75rem 1rem;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .blog-article table tbody tr:nth-child(even) { background: #fafafa; }
+    .blog-article table tbody tr:hover { background: #fff0f2; }
+    .blog-article table td {
+      padding: 0.65rem 1rem;
+      color: #3D405B;
+      border-bottom: 1px solid #f0f0f0;
+      vertical-align: middle;
+    }
+    .blog-article table td.td-part {
+      font-family: 'Courier New', monospace;
+      color: #c8102e;
+      font-weight: 700;
+    }
+    .blog-article table td.td-temp {
+      font-weight: 700;
+      color: #1a0a0a;
+    }
+    .blog-article .callout {
+      background: #fff8f8;
+      border-left: 4px solid #c8102e;
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      color: #3D405B;
+      font-size: 0.92rem;
+    }
+    .blog-article .callout strong { color: #c8102e; }
+    .blog-article .callout--blue {
+      background: #f0f4ff;
+      border-left: 4px solid #3D405B;
+    }
+    .blog-article .callout--blue strong { color: #3D405B; }
+    .blog-article .step-block {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+      position: relative;
+    }
+    .blog-article .step-block__num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: #c8102e;
+      color: #fff;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 0.65rem;
+      font-family: var(--font-body, 'Manrope', sans-serif);
+    }
+    .blog-article .step-block__title {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1a0a0a;
+      margin-bottom: 0.5rem;
+    }
+    .blog-article .step-block p {
+      font-size: 0.9rem;
+      color: #575A78;
+      margin-bottom: 0;
+    }
+    .blog-article .warning-box {
+      background: #fffbf0;
+      border: 1px solid #f0c040;
+      border-left: 4px solid #e0a800;
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .blog-article .warning-box strong { color: #b07800; }
+    .blog-article .faq-item {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 1.25rem 0;
+    }
+    .blog-article .faq-item:last-child { border-bottom: none; }
+    .blog-article .faq-q {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1a0a0a;
+      margin-bottom: 0.5rem;
+    }
+    .blog-article .faq-a { color: #555; font-size: 0.92rem; margin-bottom: 0; }
+    .blog-article .cta-block {
+      background: #1a0a0a;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+    .blog-article .cta-block p {
+      color: rgba(244,241,222,0.75);
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+    }
+    .blog-article .cta-block .btn-primary-red {
+      display: inline-block;
+      background: #c8102e;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+      font-family: var(--font-body, 'Manrope', sans-serif);
+      margin: 0.35rem;
+    }
+    .blog-article .cta-block .btn-primary-red:hover { background: #a50e26; }
+    .blog-article .cta-block .btn-outline-dark {
+      display: inline-block;
+      background: transparent;
+      color: rgba(244,241,222,0.85);
+      border: 1.5px solid rgba(244,241,222,0.3);
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-family: var(--font-body, 'Manrope', sans-serif);
+      margin: 0.35rem;
+      transition: border-color 0.2s;
+    }
+    .blog-article .cta-block .btn-outline-dark:hover { border-color: rgba(244,241,222,0.8); color: #fff; }
+    .blog-article .product-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #f9f8f5;
+      border: 1px solid #eee;
+      border-left: 3px solid #c8102e;
+      border-radius: 0 8px 8px 0;
+      padding: 0.85rem 1.1rem;
+      margin: 0.65rem 0;
+      text-decoration: none;
+    }
+    .blog-article .product-card:hover { background: #fff0f2; border-color: #c8102e; }
+    .blog-article .product-card__part {
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #c8102e;
+      white-space: nowrap;
+      min-width: 60px;
+    }
+    .blog-article .product-card__info { flex: 1; }
+    .blog-article .product-card__name { font-weight: 600; color: #1a0a0a; font-size: 0.9rem; }
+    .blog-article .product-card__desc { font-size: 0.78rem; color: #575A78; }
+    .blog-article .product-card__arrow { color: #c8102e; font-weight: 700; font-size: 0.85rem; }
+  </style>
+
+  <!-- SEO dates — auto-generated by blog_manager.py -->
+  <meta property="article:published_time" content="2025-03-03T08:00:00+07:00">
+  <meta property="article:modified_time" content="2025-03-03T08:00:00+07:00">
+  <link rel="canonical" href="https://tempil.com.vn/blog/tempilstik-la-gi-huong-dan-su-dung/">
+</head>
+<body>
+<article class="blog-article">
+
+  <h1>Que chỉ thị nhiệt Tempilstik® là gì? Hướng dẫn sử dụng đúng kỹ thuật tại công trường</h1>
+
+  <p>Trong quy trình hàn công nghiệp, câu hỏi "bề mặt thép đã đủ nhiệt chưa?" cần được trả lời bằng dữ liệu — không phải cảm quan. <strong>Que chỉ thị nhiệt Tempilstik®</strong> là thiết bị đo nhiệt độ bề mặt tiếp xúc trực tiếp, cho phép Welding Inspector và QA/QC Engineer xác nhận nhiệt độ tiền hàn (preheat), nhiệt độ liên hàn (interpass) và kiểm tra PWHT ngay tại hiện trường — không cần điện, không cần hiệu chuẩn, không bị ảnh hưởng bởi emissivity bề mặt. Bài này giải thích cơ chế hoạt động, cách chọn đúng part number và quy trình đo chuẩn theo AWS D1.1 tại công trường thực tế.</p>
+
+  
+<figure class="blog-img-wrap" style="margin:1.8rem 0">
+  <img src="/assets/images/tempilstik_que_chi_thi_nhiet_do_han_1.webp" alt="Que chỉ thị nhiệt Tempilstik® Made in USA — hộp 10 que chính hãng Laco Industries / Tempil" class="blog-img-full" loading="lazy" width="800" height="450">
+  <figcaption class="blog-img-caption">Tempilstik® — que chỉ thị nhiệt độ bề mặt Made in USA, dùng xác nhận preheat và interpass temperature tại công trường hàn công nghiệp.</figcaption>
+</figure>
+
+
+  <h2>Tempilstik® là gì — cơ chế hoạt động</h2>
+
+  <p>Tempilstik® là que sáp chỉ thị nhiệt độ bề mặt (temperature indicating crayon/stick) do hãng Tempil — thuộc tập đoàn Illinois Tool Works (ITW) — sản xuất tại Mỹ. Mỗi que được bào chế từ hỗn hợp hóa chất với nhiệt độ nóng chảy được kiểm soát chính xác ở một mức nhiệt độ nhất định, với sai số <strong>±1% Fahrenheit (±3% Celsius)</strong> theo tiêu chuẩn kiểm định của nhà sản xuất.</p>
+
+  <p>Nguyên lý làm việc hoàn toàn vật lý — không phụ thuộc điện tử hay quang học:</p>
+
+  <ul class="article-list">
+    <li><strong>Dưới nhiệt độ định mức:</strong> Que tiếp xúc bề mặt thép, để lại vệt phấn trắng dạng rắn. Vệt phấn giữ nguyên — bề mặt chưa đủ nhiệt.</li>
+    <li><strong>Đúng nhiệt độ định mức:</strong> Que tan chảy ngay lập tức thành chất lỏng trong suốt khi chạm bề mặt. Đây là tín hiệu dứt khoát — nhiệt độ đã đạt hoặc vượt ngưỡng yêu cầu.</li>
+    <li><strong>Kết quả ghi nhận được:</strong> Vệt tan để lại dấu rõ ràng trên bề mặt, có thể chụp ảnh lưu hồ sơ QA/QC mà không cần thiết bị ghi dữ liệu phụ trợ.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>Lợi thế cốt lõi so với súng đo nhiệt hồng ngoại:</strong> Tempilstik® đo nhiệt độ tiếp xúc trực tiếp — không bị ảnh hưởng bởi hệ số phát xạ (emissivity) của bề mặt thép. Trên thép có mill scale, gỉ sét hoặc lớp primer, súng hồng ngoại có thể sai lệch 5–20°C. Tempilstik® không bị ảnh hưởng bởi bất kỳ trạng thái bề mặt nào.
+  </div>
+
+  <h2>Dải nhiệt độ và hệ thống part numbers</h2>
+
+  <p>Tempilstik® có 116 mức nhiệt độ từ <strong>100°F (38°C) đến 2000°F (1093°C)</strong>, mỗi mức một part number riêng. Part number được in trực tiếp lên thân que và hộp đựng — là thông tin tra cứu duy nhất cần thiết khi đặt hàng. Mỗi hộp chứa 10 que, ngoài ra có thể mua lẻ từng que.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Part Number</th>
+          <th>Nhiệt độ °F</th>
+          <th>Nhiệt độ °C</th>
+          <th>Ứng dụng preheat điển hình</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="td-part"><a href="https://tempil.vn/tempilstik/28006-150f-66c/" target="_blank" rel="noopener">#28006</a></td><td class="td-temp">150°F</td><td>66°C</td><td>AWS D1.1 Nhóm I–II thép mỏng — mã bán chạy nhất</td></tr>
+        <tr><td class="td-part"><a href="https://tempil.vn/tempilstik/28009-175f-79c/" target="_blank" rel="noopener">#28009</a></td><td class="td-temp">175°F</td><td>79°C</td><td>ASME B31.3 P-No.1 ống dày ≥ 25mm, A106 Gr.B</td></tr>
+        <tr><td class="td-part"><a href="https://tempil.vn/tempilstik/28019-250f-121c/" target="_blank" rel="noopener">#28019</a></td><td class="td-temp">250°F</td><td>121°C</td><td>AWS D1.1 Nhóm II thép dày 20–38mm, kết cấu offshore</td></tr>
+        <tr><td class="td-part"><a href="https://tempil.vn/tempilstik/28312-230f-110c/" target="_blank" rel="noopener">#28312</a></td><td class="td-temp">230°F</td><td>110°C</td><td>AWS D1.1 Nhóm I rất dày, Nhóm II–III thép dày</td></tr>
+        <tr><td class="td-part"><a href="https://tempil.vn/tempilstik/28318-302f-150c/" target="_blank" rel="noopener">#28318</a></td><td class="td-temp">302°F</td><td>150°C</td><td>AWS D1.1 Nhóm III–IV, ASME P-No.4 (P11, P12)</td></tr>
+        <tr><td class="td-part"><a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a></td><td class="td-temp">392°F</td><td>200°C</td><td>ASME P-No.5A (P22), A335 P91, đường ống Cr-Mo</td></tr>
+        <tr><td class="td-part"><a href="https://tempil.vn/tempilstik/28039-450f-232c/" target="_blank" rel="noopener">#28039</a></td><td class="td-temp">450°F</td><td>232°C</td><td>PWHT stress relief thép carbon, ASME VIII bình áp lực</td></tr>
+        <tr><td class="td-part"><a href="https://tempil.vn/tempilstik/28047-600f-316c/" target="_blank" rel="noopener">#28047</a></td><td class="td-temp">600°F</td><td>316°C</td><td>PWHT thép Cr-Mo P91/P22, thiết bị nhiệt điện</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Tra đầy đủ 116 part numbers tại <a href="https://tempil.vn/tempilstik/">trang Tempilstik® trên tempil.vn</a> — lọc theo nhiệt độ °C hoặc °F. Nếu WPS ghi nhiệt độ nằm giữa hai mức có sẵn, chọn que có nhiệt độ thấp hơn gần nhất để đảm bảo không đo thấp hơn yêu cầu.</p>
+
+  <h2>Hướng dẫn sử dụng đúng kỹ thuật — 5 bước tại hiện trường</h2>
+
+  <p>Thao tác sử dụng Tempilstik® đơn giản, nhưng vị trí đo và thời điểm đo ảnh hưởng trực tiếp đến độ tin cậy của kết quả. Dưới đây là quy trình chuẩn theo AWS D1.1 Section 5 và ASME tương đương.</p>
+
+  <div class="step-block">
+    <div class="step-block__num">1</div>
+    <div class="step-block__title">Xác định nhiệt độ yêu cầu từ WPS</div>
+    <p>Tra trong Welding Procedure Specification (WPS) đã được phê duyệt — mục "Preheat Temperature" hoặc "Minimum Preheat". Đây là nhiệt độ tối thiểu cần đạt, không phải nhiệt độ mục tiêu. Chọn Tempilstik® có part number tương ứng đúng mức nhiệt độ đó.</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-block__num">2</div>
+    <div class="step-block__title">Vạch que lên bề mặt trước khi gia nhiệt</div>
+    <p>Vạch một đường mảnh lên bề mặt thép tại vị trí sẽ đo — <strong>trước khi bắt đầu gia nhiệt</strong>. Vệt que tạo dấu mốc trên bề mặt nguội. Khi đạt nhiệt độ, vệt đó sẽ tan thành chất lỏng rõ ràng. Không cần áp lực mạnh khi vạch — que mềm hơn bút chì, áp lực tay bình thường là đủ.</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-block__num">3</div>
+    <div class="step-block__title">Đo đúng vị trí — cách mép hàn 75mm</div>
+    <p>AWS D1.1 yêu cầu đo tại vị trí <strong>cách mép đường hàn ít nhất 75mm (3 inch)</strong> về mỗi phía, và tại ít nhất 4 vị trí phân bố đều dọc theo đường hàn. Đây là vị trí đại diện cho nhiệt độ của toàn bộ vùng ảnh hưởng nhiệt (HAZ), không phải nhiệt độ cục bộ ngay đầu mỏ gia nhiệt.</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-block__num">4</div>
+    <div class="step-block__title">Chờ đủ thời gian ngậm nhiệt (soaking time)</div>
+    <p>Với tấm thép dày trên 50mm, bề mặt đạt nhiệt không có nghĩa phần lõi đã đủ. Sau khi bề mặt đã chạm ngưỡng, duy trì nguồn nhiệt thêm 2–5 phút (tùy chiều dày) để đảm bảo nhiệt thẩm thấu xuyên suốt mặt cắt trước khi bắt đầu hàn.</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-block__num">5</div>
+    <div class="step-block__title">Ghi nhận kết quả vào hồ sơ QA/QC</div>
+    <p>Chụp ảnh vệt que tan chảy trên bề mặt tại vị trí đo, ghi part number Tempilstik® và thời điểm đo vào biên bản kiểm tra. Đây là bằng chứng trực quan chấp nhận được cho hầu hết hệ thống QA/QC dự án EPC và O&G tại Việt Nam.</p>
+  </div>
+
+  
+<figure class="blog-img-wrap" style="margin:1.8rem 0">
+  <img src="/assets/images/tempilstik_chay_tren_be_mat_thep_dat_nhiet_do_preheat.webp" alt="Que Tempilstik® tan chảy trên bề mặt thép nóng — xác nhận đạt nhiệt độ preheat yêu cầu" class="blog-img-full" loading="lazy" width="800" height="450">
+  <figcaption class="blog-img-caption">Khi bề mặt đạt đúng nhiệt độ định mức, que Tempilstik® tan chảy ngay lập tức — tín hiệu dứt khoát, có thể ghi lại bằng ảnh cho hồ sơ QA/QC.</figcaption>
+</figure>
+
+
+  <h2>Sai lầm phổ biến cần tránh</h2>
+
+  <ul class="article-list">
+    <li><strong>Đo ngay tại điểm gia nhiệt:</strong> Nhiệt độ ngay đầu mỏ đèn nung hoặc cuộn cảm ứng cao hơn rất nhiều so với nhiệt độ thực tế của HAZ. Đo ngay đó cho kết quả "đủ nhiệt" sai — thực tế vùng hàn còn lạnh hơn yêu cầu đáng kể. Luôn đo cách xa nguồn nhiệt ít nhất 50mm.</li>
+    <li><strong>Chỉ đo một điểm:</strong> Nhiệt độ phân bố không đồng đều dọc đường hàn dài — đặc biệt với kết cấu phức tạp có nhiều bulkhead hoặc stiffener hút nhiệt. Cần đo tối thiểu 4 điểm phân bố đều trên mỗi đoạn hàn.</li>
+    <li><strong>Dùng que sai nhiệt độ:</strong> Nếu WPS yêu cầu 150°C (302°F) mà dùng que 200°C (392°F), bề mặt có thể đã đủ nhiệt 150°C nhưng que vẫn chưa tan — kết quả đo sai là "chưa đủ nhiệt" dù thực tế đã đủ. Kiểm tra part number trước mỗi ca hàn.</li>
+    <li><strong>Bỏ qua interpass temperature:</strong> Sau lớp hàn đầu tiên, nhiệt độ liên hàn (interpass) cũng cần kiểm soát — không được vượt quá ngưỡng tối đa ghi trong WPS. Dùng Tempilstik® ở nhiệt độ cao hơn (ví dụ 300°C / 572°F) để kiểm tra ngưỡng interpass tối đa.</li>
+    <li><strong>Bảo quản que không đúng cách:</strong> Que để trong xe đậu nắng hoặc gần nguồn nhiệt có thể biến dạng phần đầu que, làm thay đổi điểm nóng chảy. Bảo quản ở nơi khô, mát, tránh nhiệt độ môi trường trên 40°C.</li>
+  </ul>
+
+  <div class="warning-box">
+    <strong>⚠️ Lưu ý về interpass temperature tối đa:</strong> Với thép P91 (A335 Gr.P91) và thép hợp kim cao, AWS và ASME đặt giới hạn nhiệt độ liên hàn tối đa (maximum interpass temperature) — thường là 300°C (900°F / 482°C). Vượt ngưỡng này ảnh hưởng đến cấu trúc vi mô của mối hàn. Dùng Tempilstik® <a href="https://tempil.vn/tempilstik/28053-900f-482c/" target="_blank" rel="noopener">#28053</a> (900°F / 482°C) để kiểm tra không vượt ngưỡng.
+  </div>
+
+  <h2>Phân biệt ứng dụng: Preheat — Interpass — PWHT</h2>
+
+  <p>Cùng một que Tempilstik® nhưng được dùng cho 3 mục đích kiểm soát nhiệt khác nhau trong quy trình hàn:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ứng dụng</th>
+          <th>Thời điểm đo</th>
+          <th>Mục đích</th>
+          <th>Dải nhiệt độ điển hình</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Preheat</strong></td>
+          <td>Trước khi đánh hồ quang</td>
+          <td>Đảm bảo bề mặt ≥ nhiệt độ tối thiểu trong WPS</td>
+          <td>50–250°C (thép carbon)<br>150–350°C (thép hợp kim)</td>
+        </tr>
+        <tr>
+          <td><strong>Interpass</strong></td>
+          <td>Giữa các lớp hàn</td>
+          <td>Kiểm soát không vượt nhiệt độ tối đa cho phép</td>
+          <td>≤ 200–300°C tùy loại thép</td>
+        </tr>
+        <tr>
+          <td><strong>PWHT verification</strong></td>
+          <td>Trong quá trình ủ nhiệt</td>
+          <td>Xác nhận bề mặt đạt nhiệt độ ủ yêu cầu</td>
+          <td>600–760°C (stress relief)<br>700–760°C (P91)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Với PWHT ở nhiệt độ cao (trên 600°C / 1112°F), Tempilstik® vẫn hoạt động — dải đo kéo dài đến 2000°F (1093°C). Tuy nhiên, với PWHT trong lò nung công nghiệp nơi nhiệt độ cần ghi liên tục, hệ thống thermocouple kết hợp với Tempilstik® để spot-check bổ sung là thực hành tốt nhất.</p>
+
+  
+<figure class="blog-img-wrap" style="margin:1.8rem 0">
+  <img src="/assets/images/tempilaq_va_tempilstik_do_preheat_va_interpass.webp" alt="Kết hợp Tempil-Laq và Tempilstik® kiểm soát đồng thời preheat và interpass temperature" class="blog-img-full" loading="lazy" width="800" height="450">
+  <figcaption class="blog-img-caption">Dùng song song Tempil-Laq và Tempilstik® cho phép kiểm soát cả nhiệt độ tối thiểu lẫn giới hạn trên interpass trong một thao tác.</figcaption>
+</figure>
+
+
+  <h2>Tempilstik® đáp ứng tiêu chuẩn nào?</h2>
+
+  <p>Đây là câu hỏi quan trọng nhất của QA/QC Engineer khi phải đưa phương pháp đo vào hồ sơ kiểm tra. Tempilstik® được công nhận bởi:</p>
+
+  <ul class="article-list">
+    <li><strong>AWS D1.1</strong> — Structural Welding Code: Steel (hàn kết cấu thép)</li>
+    <li><strong>ASME Section I</strong> — Boiler Construction</li>
+    <li><strong>ASME Section III</strong> — Nuclear Components</li>
+    <li><strong>ASME Section VIII</strong> — Pressure Vessels</li>
+    <li><strong>ASME B31.1</strong> — Power Piping</li>
+    <li><strong>ASME B31.3</strong> — Process Piping</li>
+    <li><strong>API 1104</strong> — Welding of Pipelines</li>
+    <li><strong>EN 1011-2</strong> — Tiêu chuẩn hàn châu Âu (phổ biến trong dự án EPCi châu Âu tại VN)</li>
+  </ul>
+
+  <p>Que chỉ thị nhiệt được liệt kê trong các tiêu chuẩn trên là phương pháp đo nhiệt độ tiếp xúc trực tiếp (direct contact temperature measurement) hợp lệ, không cần hiệu chuẩn định kỳ theo quy định cụ thể vì cơ chế hoạt động là hóa học — không phải điện tử cần drift correction.</p>
+
+  <h2>Chọn đúng part number theo WPS — quy tắc thực hành</h2>
+
+  <p>Trong thực tế, WPS ghi nhiệt độ preheat theo Celsius. Phương pháp nhanh nhất để chọn part number:</p>
+
+  <ol class="article-ol">
+    <li>Lấy nhiệt độ preheat tối thiểu trong WPS (đơn vị °C)</li>
+    <li>Quy đổi sang °F: T°F = T°C × 9/5 + 32</li>
+    <li>Tìm part number có nhiệt độ gần nhất — nhưng <em>không được thấp hơn</em> nhiệt độ yêu cầu</li>
+    <li>Nếu có hai mức giáp nhau, chọn mức thấp hơn để đảm bảo phát hiện chính xác khi đạt ngưỡng</li>
+  </ol>
+
+  <p><strong>Ví dụ thực tế:</strong> WPS yêu cầu preheat tối thiểu 100°C → quy đổi: 100 × 9/5 + 32 = 212°F → chọn Tempilstik® <strong><a href="https://tempil.vn/tempilstik/28016-225f-107c/" target="_blank" rel="noopener">#28016</a> (225°F / 107°C)</strong>. Khi que tan, bề mặt chính xác đã đạt 212°F.</p>
+
+  <p>Tra danh sách đầy đủ part numbers theo nhiệt độ:</p>
+
+  <a href="https://tempil.vn/tempilstik/" class="product-card">
+    <div class="product-card__part">#28000–28075</div>
+    <div class="product-card__info">
+      <div class="product-card__name">Tempilstik® — 116 Part Numbers</div>
+      <div class="product-card__desc">100°F đến 2000°F · Bán theo hộp 10 que hoặc lẻ từng que · Sẵn kho tại TPHCM & Vũng Tàu</div>
+    </div>
+    <div class="product-card__arrow">→</div>
+  </a>
+
+  <h2>Câu hỏi thường gặp</h2>
+
+  <div class="faq-item">
+    <p class="faq-q">Tempilstik® có cần hiệu chuẩn định kỳ không?</p>
+    <p class="faq-a">Không. Tempilstik® hoạt động theo cơ chế hóa học — điểm nóng chảy của hợp chất được kiểm định tại nhà máy sản xuất và không thay đổi theo thời gian nếu bảo quản đúng cách. Không có drift điện tử, không có bộ phận cơ học cần kiểm tra. Đây là lợi thế quan trọng so với thiết bị điện tử khi làm thủ tục audit QA.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Có thể dùng Tempilstik® ngoài trời khi trời mưa không?</p>
+    <p class="faq-a">Có. Que hoạt động tốt trong điều kiện ẩm ướt vì cơ chế đo là nhiệt độ tiếp xúc — không phụ thuộc quang học hay điện tử. Tuy nhiên, bề mặt thép ướt nguội nhanh hơn sau khi ngưng gia nhiệt, nên cần đo ngay khi vừa ngưng nguồn nhiệt. Gió lớn cũng làm bề mặt mất nhiệt nhanh hơn — cần tính vào khi duy trì preheat ngoài trời.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Một que dùng được bao nhiêu lần?</p>
+    <p class="faq-a">Tùy lực vạch và chiều dài vết đo. Thông thường một que 150mm có thể tạo khoảng 20–40 vết đo. Que rút dần từ vỏ khi dùng, tương tự bút chì — phần còn lại trong vỏ kim loại được bảo vệ khỏi gãy vỡ.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Tempilstik® có độc hại không khi tiếp xúc tay?</p>
+    <p class="faq-a">Thế hệ hiện tại của Tempilstik® (sản xuất từ 2012 trở đi) là <strong>lead-free và sulfur-free</strong> — được ghi rõ trên nhãn hộp. Không độc khi tiếp xúc da trong điều kiện bình thường. Không nên để que tiếp xúc trực tiếp mặt hoặc mắt. Thành phần hóa học đầy đủ có trong Safety Data Sheet (SDS) đi kèm sản phẩm chính hãng.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Tempilstik® có dùng được trên inox (stainless steel) không?</p>
+    <p class="faq-a">Có — Tempilstik® hoạt động trên inox austenitic (304, 316) và duplex stainless. Tuy nhiên, cần lưu ý sulfur trong một số loại que cũ có thể gây ăn mòn điểm trên inox ở nhiệt độ cao. Dòng hiện tại sulfur-free giải quyết vấn đề này — nhưng vẫn nên kiểm tra SDS trước khi dùng trên inox cho hệ thống áp lực quan trọng.</p>
+  </div>
+
+  <div class="cta-block">
+    <p>Cần báo giá Tempilstik® cho dự án? tempil.vn là nhà phân phối chính hãng Tempil® tại Việt Nam — nhập khẩu trực tiếp từ Mỹ, đầy đủ C/O, C/Q và hóa đơn VAT. Bán theo hộp 10 que hoặc lẻ từng que tùy nhu cầu.</p>
+    <a href="https://tempil.vn/bao-gia/" class="btn-primary-red">Yêu cầu báo giá</a>
+    <a href="tel:0938888958" class="btn-outline-dark">0938 888 958</a>
+  </div>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Tempilstik® có cần hiệu chuẩn định kỳ không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không. Tempilstik® hoạt động theo cơ chế hóa học — điểm nóng chảy của hợp chất được kiểm định tại nhà máy sản xuất và không thay đổi theo thời gian nếu bảo quản đúng cách. Không có drift điện tử, không có bộ phận cơ học cần kiểm tra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Có thể dùng Tempilstik® ngoài trời khi trời mưa không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có. Que hoạt động tốt trong điều kiện ẩm ướt vì cơ chế đo là nhiệt độ tiếp xúc — không phụ thuộc quang học hay điện tử. Tuy nhiên, bề mặt thép ướt nguội nhanh hơn sau khi ngưng gia nhiệt, nên cần đo ngay khi vừa ngưng nguồn nhiệt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tempilstik® có độc hại không khi tiếp xúc tay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thế hệ hiện tại của Tempilstik® (sản xuất từ 2012 trở đi) là lead-free và sulfur-free — được ghi rõ trên nhãn hộp. Không độc khi tiếp xúc da trong điều kiện bình thường."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tempilstik® đáp ứng tiêu chuẩn hàn nào?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tempilstik® được công nhận bởi AWS D1.1, ASME Section I, III, VIII, ASME B31.1, B31.3, API 1104 và EN 1011-2. Que chỉ thị nhiệt là phương pháp đo nhiệt độ tiếp xúc trực tiếp hợp lệ theo tất cả các tiêu chuẩn này."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://tempil.com.vn/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog kỹ thuật", "item": "https://tempil.com.vn/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Que chỉ thị nhiệt Tempilstik® là gì", "item": "https://tempil.com.vn/blog/que-chi-thi-nhiet-tempilstik-la-gi/"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cách sử dụng que chỉ thị nhiệt Tempilstik® đúng kỹ thuật",
+  "description": "Quy trình 5 bước sử dụng Tempilstik® để kiểm tra nhiệt độ preheat theo AWS D1.1 tại công trường hàn công nghiệp",
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "Xác định nhiệt độ yêu cầu từ WPS", "text": "Tra trong WPS đã được phê duyệt — mục Preheat Temperature. Chọn Tempilstik® có part number tương ứng đúng mức nhiệt độ đó."},
+    {"@type": "HowToStep", "position": 2, "name": "Vạch que lên bề mặt trước khi gia nhiệt", "text": "Vạch một đường mảnh lên bề mặt thép tại vị trí sẽ đo, trước khi bắt đầu gia nhiệt."},
+    {"@type": "HowToStep", "position": 3, "name": "Đo đúng vị trí — cách mép hàn 75mm", "text": "AWS D1.1 yêu cầu đo tại vị trí cách mép đường hàn ít nhất 75mm về mỗi phía, tại ít nhất 4 vị trí phân bố đều."},
+    {"@type": "HowToStep", "position": 4, "name": "Chờ đủ thời gian ngậm nhiệt", "text": "Với tấm thép dày trên 50mm, duy trì nguồn nhiệt thêm 2–5 phút sau khi bề mặt đạt ngưỡng."},
+    {"@type": "HowToStep", "position": 5, "name": "Ghi nhận kết quả vào hồ sơ QA/QC", "text": "Chụp ảnh vệt que tan chảy, ghi part number và thời điểm đo vào biên bản kiểm tra."}
+  ]
+}
+</script>
+
+</body>
+</html>

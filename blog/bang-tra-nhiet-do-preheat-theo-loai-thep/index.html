@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bảng tra nhiệt độ preheat theo loại thép — AWS D1.1, ASME B31.3, API 1104 (Song ngữ Việt–Anh)</title>
+  <meta name="description" content="Bảng tra nhiệt độ preheat (nung sơ bộ) đầy đủ theo AWS D1.1, ASME B31.3 và API 1104 — phân loại theo loại thép, chiều dày và Carbon Equivalent. Song ngữ Việt–Anh, kèm part number Tempilstik® tương ứng.">
+  <style>
+    .blog-article {
+      font-family: var(--font-body, 'Manrope', 'Segoe UI', sans-serif);
+      color: #3D405B;
+      max-width: 900px;
+      line-height: 1.75;
+      font-size: 0.97rem;
+    }
+    .blog-article h1 {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: #1a0a0a;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .blog-article h2 {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+      color: #1a0a0a;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #c8102e;
+    }
+    .blog-article h3 {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: 1.1rem;
+      color: #1a0a0a;
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.65rem;
+    }
+    .blog-article p { margin-bottom: 1rem; }
+    .blog-article a { color: #c8102e; text-decoration: none; border-bottom: 1px solid rgba(200,16,46,0.3); transition: border-color 0.2s; }
+    .blog-article a:hover { color: #a50e26; border-color: #c8102e; }
+    .blog-article ul.article-list { padding: 0; margin: 1rem 0 1.25rem; list-style: none; }
+    .blog-article ul.article-list li { padding: 0.65rem 0 0.65rem 1.6rem; border-bottom: 1px solid #f0f0f0; color: #3D405B; position: relative; line-height: 1.6; }
+    .blog-article ul.article-list li:last-child { border-bottom: none; }
+    .blog-article ul.article-list li::before { content: ''; position: absolute; left: 0; top: 1.05rem; width: 8px; height: 8px; background: #c8102e; border-radius: 50%; }
+    .blog-article .table-wrap { overflow-x: auto; margin: 1.5rem 0; border-radius: 8px; box-shadow: 0 2px 12px rgba(61,64,91,0.08); }
+    .blog-article table { width: 100%; border-collapse: collapse; font-family: var(--font-body, 'Manrope', sans-serif); font-size: 0.86rem; }
+    .blog-article table thead tr { background: #c8102e; color: #fff; }
+    .blog-article table th { padding: 0.75rem 0.85rem; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.04em; text-align: left; white-space: nowrap; }
+    .blog-article table tbody tr:nth-child(even) { background: #fafafa; }
+    .blog-article table tbody tr:hover { background: #fff0f2; }
+    .blog-article table td { padding: 0.6rem 0.85rem; color: #3D405B; border-bottom: 1px solid #f0f0f0; vertical-align: middle; line-height: 1.45; }
+    .blog-article table td.td-part { font-family: 'Courier New', monospace; color: #c8102e; font-weight: 700; white-space: nowrap; }
+    .blog-article table td.td-temp { font-weight: 700; color: #1a0a0a; white-space: nowrap; }
+    .blog-article table td.td-na { color: #999; font-style: italic; font-size: 0.8rem; }
+    .blog-article table td small { color: #888; font-size: 0.78rem; display: block; margin-top: 2px; }
+    .blog-article .table-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #1a0a0a;
+      color: #fff;
+      font-family: var(--font-body, 'Manrope', sans-serif);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.85rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .blog-article .callout { background: #fff8f8; border-left: 4px solid #c8102e; border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.5rem 0; color: #3D405B; font-size: 0.92rem; }
+    .blog-article .callout strong { color: #c8102e; }
+    .blog-article .callout--info { background: #f0f4ff; border-left-color: #3D405B; }
+    .blog-article .callout--info strong { color: #3D405B; }
+    .blog-article .formula-box { background: #f5f5f8; border: 1px solid #e0e0e8; border-radius: 8px; padding: 1.1rem 1.25rem; margin: 1.25rem 0; font-family: 'Courier New', monospace; color: #1a0a0a; font-size: 0.92rem; line-height: 1.8; }
+    .blog-article .bilingual-note { background: #f9f8f5; border: 1px solid #eee; border-radius: 8px; padding: 0.75rem 1rem; margin: 0.5rem 0; display: flex; gap: 1rem; align-items: flex-start; }
+    .blog-article .bilingual-note__vi { font-weight: 600; color: #1a0a0a; flex: 1; }
+    .blog-article .bilingual-note__en { color: #575A78; font-style: italic; flex: 1; font-size: 0.88rem; }
+    .blog-article .faq-item { border-bottom: 1px solid #f0f0f0; padding: 1.25rem 0; }
+    .blog-article .faq-item:last-child { border-bottom: none; }
+    .blog-article .faq-q { font-family: var(--font-heading, 'Lora', Georgia, serif); font-size: 1rem; font-weight: 600; color: #1a0a0a; margin-bottom: 0.5rem; }
+    .blog-article .faq-a { color: #555; font-size: 0.92rem; margin-bottom: 0; }
+    .blog-article .cta-block { background: #1a0a0a; border-radius: 12px; padding: 2rem; margin-top: 2.5rem; text-align: center; }
+    .blog-article .cta-block p { color: rgba(244,241,222,0.75); margin-bottom: 1.25rem; font-size: 0.95rem; }
+    .blog-article .cta-block .btn-primary-red { display: inline-block; background: #c8102e; color: #fff; padding: 0.8rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none; border: none; font-size: 0.95rem; transition: background 0.2s; font-family: var(--font-body, 'Manrope', sans-serif); margin: 0.35rem; }
+    .blog-article .cta-block .btn-primary-red:hover { background: #a50e26; }
+    .blog-article .cta-block .btn-outline-dark { display: inline-block; background: transparent; color: rgba(244,241,222,0.85); border: 1.5px solid rgba(244,241,222,0.3); padding: 0.8rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.95rem; font-family: var(--font-body, 'Manrope', sans-serif); margin: 0.35rem; transition: border-color 0.2s; }
+    .blog-article .cta-block .btn-outline-dark:hover { border-color: rgba(244,241,222,0.8); color: #fff; }
+    .blog-article .section-divider { height: 2px; background: linear-gradient(to right, #c8102e, transparent); margin: 2rem 0; border: none; }
+  </style>
+
+  <!-- SEO dates — auto-generated by blog_manager.py -->
+  <meta property="article:published_time" content="2025-03-17T08:00:00+07:00">
+  <meta property="article:modified_time" content="2025-03-17T08:00:00+07:00">
+  <link rel="canonical" href="https://tempil.com.vn/blog/bang-tra-nhiet-do-preheat-theo-loai-thep/">
+</head>
+<body>
+<article class="blog-article">
+
+  <h1>Bảng tra nhiệt độ preheat theo loại thép — AWS D1.1, ASME B31.3, API 1104 (Song ngữ Việt–Anh)</h1>
+
+  <p>Trang này tổng hợp nhiệt độ preheat (nung sơ bộ) tối thiểu từ ba tiêu chuẩn quốc tế phổ biến nhất trong hàn công nghiệp tại Việt Nam: <strong>AWS D1.1</strong> (hàn kết cấu thép), <strong>ASME B31.3</strong> (hàn ống công nghệ) và <strong>API 1104</strong> (hàn đường ống dầu khí). Dữ liệu được trình bày song ngữ Việt–Anh, kèm part number <a href="https://tempil.vn/tempilstik/">que chỉ thị nhiệt Tempilstik®</a> tương ứng để tra cứu nhanh tại công trường.</p>
+
+  <div class="callout--info callout">
+    <strong>Cách dùng trang này:</strong> Xác định tiêu chuẩn áp dụng trong WPS → tra loại thép và chiều dày → tìm nhiệt độ preheat tối thiểu → chọn Tempilstik® part number tương ứng. Nếu nhiệt độ trong WPS không khớp chính xác với bảng, <strong>luôn ưu tiên con số trong WPS đã được phê duyệt</strong> — bảng này là tài liệu tham khảo, không thay thế WPS dự án.
+  </div>
+
+  
+<figure class="blog-img-wrap" style="margin:1.8rem 0">
+  <img src="/assets/images/tempilstik_but_do_nhiet_do_han_1.webp" alt="Que Tempilstik® — áp dụng bảng preheat AWS D1.1, ASME B31.3, API 1104 tại hiện trường" class="blog-img-full" loading="lazy" width="800" height="450">
+  <figcaption class="blog-img-caption">Sau khi tra bảng preheat theo loại thép và tiêu chuẩn, chọn part number Tempilstik® tương ứng để xác nhận nhiệt độ tại công trường.</figcaption>
+</figure>
+
+
+  <h2>Thuật ngữ song ngữ — Bilingual Glossary</h2>
+
+  <p>Các thuật ngữ kỹ thuật xuất hiện trong tất cả bảng bên dưới, kèm tiếng Anh để đối chiếu với WPS và tiêu chuẩn gốc:</p>
+
+  <div class="bilingual-note">
+    <div class="bilingual-note__vi">Nhiệt độ preheat tối thiểu</div>
+    <div class="bilingual-note__en">Minimum preheat temperature</div>
+  </div>
+  <div class="bilingual-note">
+    <div class="bilingual-note__vi">Chiều dày danh nghĩa</div>
+    <div class="bilingual-note__en">Nominal thickness / Base metal thickness</div>
+  </div>
+  <div class="bilingual-note">
+    <div class="bilingual-note__vi">Carbon Equivalent / Chỉ số tương đương carbon</div>
+    <div class="bilingual-note__en">Carbon Equivalent (CE)</div>
+  </div>
+  <div class="bilingual-note">
+    <div class="bilingual-note__vi">Vùng ảnh hưởng nhiệt</div>
+    <div class="bilingual-note__en">Heat Affected Zone (HAZ)</div>
+  </div>
+  <div class="bilingual-note">
+    <div class="bilingual-note__vi">Nhiệt độ liên hàn (tối đa)</div>
+    <div class="bilingual-note__en">Maximum interpass temperature</div>
+  </div>
+  <div class="bilingual-note">
+    <div class="bilingual-note__vi">Không yêu cầu preheat</div>
+    <div class="bilingual-note__en">Not required / No preheat required</div>
+  </div>
+  <div class="bilingual-note">
+    <div class="bilingual-note__vi">Xử lý nhiệt sau hàn</div>
+    <div class="bilingual-note__en">Post Weld Heat Treatment (PWHT)</div>
+  </div>
+
+  <h2>Bảng 1 — AWS D1.1: Hàn kết cấu thép</h2>
+  <p><em>Áp dụng cho: cầu, nhà xưởng, kết cấu thép offshore, module thượng tầng, jacket.</em><br>
+  <em>Apply to: structural steel welding — bridges, buildings, offshore structures, jackets.</em></p>
+
+  <div class="formula-box">
+    Công thức Carbon Equivalent (AWS D1.1):<br>
+    CE = C + Mn/6 + (Cr+Mo+V)/5 + (Ni+Cu)/15<br><br>
+    Tra giá trị C, Mn, Cr, Mo, V, Ni, Cu trong Mill Test Certificate (MTC) của lô thép.<br>
+    CE values from Mill Test Certificate (MTC) / Material Test Report (MTR).
+  </div>
+
+  <div class="table-label">AWS D1.1 — Table 4.5 (2020 Edition)</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Nhóm thép<br><small style="font-weight:400">Steel Category</small></th>
+          <th>Carbon Equivalent<br><small style="font-weight:400">CE</small></th>
+          <th>Grade điển hình VN<br><small style="font-weight:400">Typical Grades</small></th>
+          <th>≤ 20mm<br><small style="font-weight:400">≤ ¾"</small></th>
+          <th>20–38mm<br><small style="font-weight:400">¾"–1½"</small></th>
+          <th>38–65mm<br><small style="font-weight:400">1½"–2½"</small></th>
+          <th>&gt; 65mm<br><small style="font-weight:400">&gt; 2½"</small></th>
+          <th>Tempilstik®<br><small style="font-weight:400">Part No.</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Nhóm I</strong><br><small>Category I</small></td>
+          <td>CE ≤ 0.40</td>
+          <td>SS400, A36, SM400<br><small>S235, S275 (EN equiv.)</small></td>
+          <td class="td-na">Không yêu cầu*<br><small>Not required*</small></td>
+          <td class="td-na">Không yêu cầu*<br><small>Not required*</small></td>
+          <td class="td-temp">66°C / 150°F</td>
+          <td class="td-temp">110°C / 230°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28006-150f-66c/" target="_blank" rel="noopener">#28006</a><br><a href="https://tempil.vn/tempilstik/28312-230f-110c/" target="_blank" rel="noopener">#28312</a></td>
+        </tr>
+        <tr>
+          <td><strong>Nhóm II</strong><br><small>Category II</small></td>
+          <td>CE 0.41–0.45</td>
+          <td>SM490, A572 Gr.50<br><small>S355 (EN equiv.)</small></td>
+          <td class="td-na">Không yêu cầu*<br><small>Not required*</small></td>
+          <td class="td-temp">66°C / 150°F</td>
+          <td class="td-temp">110°C / 230°F</td>
+          <td class="td-temp">150°C / 302°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28006-150f-66c/" target="_blank" rel="noopener">#28006</a><br><a href="https://tempil.vn/tempilstik/28312-230f-110c/" target="_blank" rel="noopener">#28312</a><br><a href="https://tempil.vn/tempilstik/28318-302f-150c/" target="_blank" rel="noopener">#28318</a></td>
+        </tr>
+        <tr>
+          <td><strong>Nhóm III</strong><br><small>Category III</small></td>
+          <td>CE 0.46–0.60</td>
+          <td>SM520, A572 Gr.65<br><small>S420, S460 (EN equiv.)</small></td>
+          <td class="td-temp">66°C / 150°F</td>
+          <td class="td-temp">110°C / 230°F</td>
+          <td class="td-temp">150°C / 302°F</td>
+          <td class="td-temp">200°C / 392°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28006-150f-66c/" target="_blank" rel="noopener">#28006</a><br><a href="https://tempil.vn/tempilstik/28312-230f-110c/" target="_blank" rel="noopener">#28312</a><br><a href="https://tempil.vn/tempilstik/28318-302f-150c/" target="_blank" rel="noopener">#28318</a><br><a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a></td>
+        </tr>
+        <tr>
+          <td><strong>Nhóm IV</strong><br><small>Category IV</small></td>
+          <td>CE &gt; 0.60</td>
+          <td>HY-80, A514<br><small>High-strength alloy</small></td>
+          <td class="td-temp">110°C / 230°F</td>
+          <td class="td-temp">150°C / 302°F</td>
+          <td class="td-temp">200°C / 392°F</td>
+          <td class="td-temp">230°C / 446°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28312-230f-110c/" target="_blank" rel="noopener">#28312</a><br><a href="https://tempil.vn/tempilstik/28318-302f-150c/" target="_blank" rel="noopener">#28318</a><br><a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a><br><a href="https://tempil.vn/tempilstik/28332-446f-230c/" target="_blank" rel="noopener">#28332</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><small>* Không yêu cầu theo tiêu chuẩn — nhưng AWS khuyến nghị gia nhiệt tối thiểu 10°C khi nhiệt độ môi trường dưới 5°C hoặc bề mặt có hơi ẩm.<br>
+  * Not required per standard — but preheat to minimum 10°C recommended when ambient temperature is below 5°C or surface has moisture.</small></p>
+
+  <div class="callout">
+    <strong>Lưu ý quan trọng về AWS D1.1:</strong> Các giá trị trên là nhiệt độ tối thiểu (minimum). Với mối hàn có độ ràng buộc cao (high restraint joint) — ví dụ hàn góc, hàn tấm dày vào flange — WPS thường quy định cao hơn 20–30°C so với giá trị bảng. Luôn tra WPS trước, dùng bảng này chỉ để cross-check.
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>Bảng 2 — ASME B31.3: Hàn ống công nghệ (Process Piping)</h2>
+  <p><em>Áp dụng cho: ống trong nhà máy lọc dầu, hóa chất, điện lực, khí công nghiệp. Phân loại theo P-Number thay vì CE.</em><br>
+  <em>Apply to: process piping in refineries, chemical plants, power generation. Classified by P-Number.</em></p>
+
+  <div class="callout--info callout">
+    <strong>P-Number là gì?</strong> ASME phân loại vật liệu hàn theo hệ thống P-Number dựa trên thành phần hóa học và cơ tính. P-Number của vật liệu ống được tra trong WPS đã phê duyệt hoặc Mill Certificate đi kèm ống thép — không cần tính công thức CE.
+  </div>
+
+  <div class="table-label">ASME B31.3 — Table 330.1.1</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>P-Number<br><small style="font-weight:400">Material Group</small></th>
+          <th>Loại thép điển hình<br><small style="font-weight:400">Typical Material</small></th>
+          <th>ASTM Grade phổ biến<br><small style="font-weight:400">Common ASTM Grades</small></th>
+          <th>Chiều dày &lt; 25mm<br><small style="font-weight:400">Thickness &lt; 1"</small></th>
+          <th>Chiều dày ≥ 25mm<br><small style="font-weight:400">Thickness ≥ 1"</small></th>
+          <th>Tempilstik®<br><small style="font-weight:400">Part No.</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>P-No.1 Gr.1,2,3</strong></td>
+          <td>Carbon steel<br><small>Thép carbon thường</small></td>
+          <td>A53 Gr.B, A106 Gr.B<br>A333 Gr.6</td>
+          <td class="td-temp">10°C / 50°F</td>
+          <td class="td-temp">79°C / 175°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28009-175f-79c/" target="_blank" rel="noopener">#28009</a></td>
+        </tr>
+        <tr>
+          <td><strong>P-No.1 Gr.4,5</strong></td>
+          <td>High-carbon steel<br><small>Thép carbon cao</small></td>
+          <td>A106 Gr.C<br>A53 Gr.B (high-C)</td>
+          <td class="td-temp">79°C / 175°F</td>
+          <td class="td-temp">79°C / 175°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28009-175f-79c/" target="_blank" rel="noopener">#28009</a></td>
+        </tr>
+        <tr>
+          <td><strong>P-No.3</strong></td>
+          <td>Alloy steel (low)<br><small>Thép hợp kim thấp</small></td>
+          <td>A335 P1, A335 P2<br>A161 T1</td>
+          <td class="td-temp">79°C / 175°F</td>
+          <td class="td-temp">79°C / 175°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28009-175f-79c/" target="_blank" rel="noopener">#28009</a></td>
+        </tr>
+        <tr>
+          <td><strong>P-No.4</strong></td>
+          <td>1¼Cr–½Mo steel<br><small>Thép Cr-Mo thấp</small></td>
+          <td>A335 P11, A335 P12<br>A161 T11</td>
+          <td class="td-temp">150°C / 302°F</td>
+          <td class="td-temp">150°C / 302°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28318-302f-150c/" target="_blank" rel="noopener">#28318</a></td>
+        </tr>
+        <tr>
+          <td><strong>P-No.5A</strong></td>
+          <td>2¼Cr–1Mo steel<br><small>Thép Cr-Mo trung</small></td>
+          <td>A335 P22<br>A213 T22</td>
+          <td class="td-temp">200°C / 392°F</td>
+          <td class="td-temp">200°C / 392°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a></td>
+        </tr>
+        <tr>
+          <td><strong>P-No.5B Gr.1</strong></td>
+          <td>5Cr–½Mo steel</td>
+          <td>A335 P5<br>A213 T5</td>
+          <td class="td-temp">200°C / 392°F</td>
+          <td class="td-temp">200°C / 392°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a></td>
+        </tr>
+        <tr>
+          <td><strong>P-No.15E</strong></td>
+          <td>9Cr–1Mo-V (P91)<br><small>Thép P91 chịu nhiệt cao</small></td>
+          <td>A335 P91<br>A213 T91</td>
+          <td class="td-temp">200°C / 392°F</td>
+          <td class="td-temp">200°C / 392°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a></td>
+        </tr>
+        <tr>
+          <td><strong>P-No.8</strong></td>
+          <td>Austenitic stainless<br><small>Inox austenitic</small></td>
+          <td>A312 TP304, TP316<br>A358 TP304L</td>
+          <td class="td-na">Không yêu cầu<br><small>Not required</small></td>
+          <td class="td-na">Không yêu cầu<br><small>Not required</small></td>
+          <td class="td-na">—</td>
+        </tr>
+        <tr>
+          <td><strong>P-No.10H</strong></td>
+          <td>Duplex stainless<br><small>Inox duplex</small></td>
+          <td>A790 UNS S31803<br>A928 UNS S32750</td>
+          <td class="td-na">Không yêu cầu*<br><small>Not required*</small></td>
+          <td class="td-na">Không yêu cầu*<br><small>Not required*</small></td>
+          <td class="td-na">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><small>* Duplex stainless: preheat thường không yêu cầu, nhưng kiểm soát nhiệt độ liên hàn (interpass ≤ 150°C) là bắt buộc để duy trì cân bằng pha austenit/ferit.</small></p>
+
+  
+<figure class="blog-img-wrap" style="margin:1.8rem 0">
+  <img src="/assets/images/tempilstik_but_do_nhiet_do_han_nhieu_muc_2.webp" alt="Bộ que Tempilstik® nhiều mức — chuẩn bị theo bảng AWS D1.1, ASME B31.3 và API 1104" class="blog-img-full" loading="lazy" width="800" height="450">
+  <figcaption class="blog-img-caption">Mỗi nhóm thép có yêu cầu preheat khác nhau. Chuẩn bị sẵn các mức Tempilstik® phổ biến theo bảng tra để đội QC/thi công chủ động tại hiện trường.</figcaption>
+</figure>
+
+
+  <hr class="section-divider">
+
+  <h2>Bảng 3 — API 1104: Hàn đường ống dầu khí truyền tải</h2>
+  <p><em>Áp dụng cho: đường ống truyền tải dầu, khí, khí ngưng tụ (oil, gas, NGL pipelines). Phân loại theo grade API 5L.</em><br>
+  <em>Apply to: transmission pipelines — oil, gas, condensate. Classified by API 5L grade.</em></p>
+
+  <div class="table-label">API 1104 — Section 5.3 Preheat</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Grade ống (API 5L)<br><small style="font-weight:400">Pipe Grade</small></th>
+          <th>Yield Strength<br><small style="font-weight:400">Giới hạn chảy</small></th>
+          <th>Carbon Equivalent<br><small style="font-weight:400">CE (IIW formula)</small></th>
+          <th>Thành ống ≤ 25.4mm<br><small style="font-weight:400">Wall ≤ 1"</small></th>
+          <th>Thành ống &gt; 25.4mm<br><small style="font-weight:400">Wall &gt; 1"</small></th>
+          <th>Tempilstik®<br><small style="font-weight:400">Part No.</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>API 5L Gr.B</strong></td>
+          <td>241 MPa (35 ksi)</td>
+          <td>CE ≤ 0.43</td>
+          <td class="td-na">Không yêu cầu*</td>
+          <td class="td-temp">50°C / 122°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28002-109f-43c/" target="_blank" rel="noopener">#28002</a></td>
+        </tr>
+        <tr>
+          <td><strong>API 5L X42</strong></td>
+          <td>290 MPa (42 ksi)</td>
+          <td>CE ≤ 0.43</td>
+          <td class="td-na">Không yêu cầu*</td>
+          <td class="td-temp">50°C / 122°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28002-109f-43c/" target="_blank" rel="noopener">#28002</a></td>
+        </tr>
+        <tr>
+          <td><strong>API 5L X52</strong></td>
+          <td>359 MPa (52 ksi)</td>
+          <td>CE 0.40–0.43</td>
+          <td class="td-temp">50°C / 122°F</td>
+          <td class="td-temp">80°C / 176°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28002-109f-43c/" target="_blank" rel="noopener">#28002</a><br><a href="https://tempil.vn/tempilstik/28009-175f-79c/" target="_blank" rel="noopener">#28009</a></td>
+        </tr>
+        <tr>
+          <td><strong>API 5L X60</strong></td>
+          <td>414 MPa (60 ksi)</td>
+          <td>CE 0.42–0.46</td>
+          <td class="td-temp">80°C / 176°F</td>
+          <td class="td-temp">100°C / 212°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28009-175f-79c/" target="_blank" rel="noopener">#28009</a><br><a href="https://tempil.vn/tempilstik/28016-225f-107c/" target="_blank" rel="noopener">#28016</a></td>
+        </tr>
+        <tr>
+          <td><strong>API 5L X65</strong></td>
+          <td>448 MPa (65 ksi)</td>
+          <td>CE 0.43–0.47</td>
+          <td class="td-temp">100°C / 212°F</td>
+          <td class="td-temp">120°C / 248°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28016-225f-107c/" target="_blank" rel="noopener">#28016</a><br><a href="https://tempil.vn/tempilstik/28019-250f-121c/" target="_blank" rel="noopener">#28019</a></td>
+        </tr>
+        <tr>
+          <td><strong>API 5L X70</strong></td>
+          <td>483 MPa (70 ksi)</td>
+          <td>CE 0.43–0.47</td>
+          <td class="td-temp">100°C / 212°F</td>
+          <td class="td-temp">120°C / 248°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28016-225f-107c/" target="_blank" rel="noopener">#28016</a><br><a href="https://tempil.vn/tempilstik/28019-250f-121c/" target="_blank" rel="noopener">#28019</a></td>
+        </tr>
+        <tr>
+          <td><strong>API 5L X80</strong></td>
+          <td>552 MPa (80 ksi)</td>
+          <td>CE 0.46–0.50</td>
+          <td class="td-temp">120°C / 248°F</td>
+          <td class="td-temp">150°C / 302°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28019-250f-121c/" target="_blank" rel="noopener">#28019</a><br><a href="https://tempil.vn/tempilstik/28318-302f-150c/" target="_blank" rel="noopener">#28318</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><small>* API 1104 không yêu cầu nhưng khuyến nghị preheat đến 50°C khi nhiệt độ môi trường dưới 0°C hoặc bề mặt có hơi ẩm.</small></p>
+
+  <div class="callout">
+    <strong>Lưu ý API 1104:</strong> Với đường ống dầu khí tại Việt Nam, nhiệt độ preheat thực tế trong WPS thường cao hơn 20–30°C so với bảng tối thiểu vì điều kiện công trường offshore (độ ẩm cao, gió biển, bề mặt ống thường ẩm ướt). Preheat theo WPS dự án cụ thể, không dùng giá trị minimum trong bảng này.
+  </div>
+
+  <hr class="section-divider">
+
+  <h2>Bảng 4 — Nhiệt độ interpass tối đa (Maximum Interpass Temperature)</h2>
+  <p><em>Quan trọng không kém preheat — kiểm soát interpass ngăn suy giảm cơ tính mối hàn do quá nhiệt giữa các lớp.</em></p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Loại thép / Vật liệu<br><small style="font-weight:400">Material</small></th>
+          <th>Nhiệt độ interpass tối đa<br><small style="font-weight:400">Maximum Interpass Temp.</small></th>
+          <th>Tiêu chuẩn<br><small style="font-weight:400">Standard</small></th>
+          <th>Ghi chú<br><small style="font-weight:400">Notes</small></th>
+          <th>Tempilstik® kiểm tra ngưỡng<br><small style="font-weight:400">Part No. for limit check</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thép carbon thường<br><small>Carbon steel</small></td>
+          <td class="td-temp">≤ 250–300°C<br><small>≤ 482–572°F</small></td>
+          <td>AWS D1.1</td>
+          <td>Tra trong WPS — thường 250°C với thép kết cấu</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28039-450f-232c/" target="_blank" rel="noopener">#28039</a> (450°F/232°C)<br><a href="https://tempil.vn/tempilstik/28053-900f-482c/" target="_blank" rel="noopener">#28053</a> (900°F/482°C)</td>
+        </tr>
+        <tr>
+          <td>Thép P11 (1¼Cr–½Mo)<br><small>Cr-Mo low alloy</small></td>
+          <td class="td-temp">≤ 300°C<br><small>≤ 572°F</small></td>
+          <td>ASME B31.3</td>
+          <td>Kiểm soát chặt vì ảnh hưởng đến toughness HAZ</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28053-900f-482c/" target="_blank" rel="noopener">#28053</a> (900°F/482°C)</td>
+        </tr>
+        <tr>
+          <td>Thép P22 (2¼Cr–1Mo)<br><small>Cr-Mo medium alloy</small></td>
+          <td class="td-temp">≤ 300°C<br><small>≤ 572°F</small></td>
+          <td>ASME B31.3</td>
+          <td>Kết hợp với PWHT bắt buộc sau hàn</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28053-900f-482c/" target="_blank" rel="noopener">#28053</a> (900°F/482°C)</td>
+        </tr>
+        <tr>
+          <td>Thép P91 (9Cr–1Mo-V)<br><small>Modified 9Cr-Mo</small></td>
+          <td class="td-temp">≤ 300°C<br><small>≤ 572°F</small></td>
+          <td>ASME B31.3<br>EN 1011-2</td>
+          <td><strong>Bắt buộc kiểm soát nghiêm ngặt</strong> — vượt ngưỡng gây phân huỷ carbide làm suy giảm creep strength</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28053-900f-482c/" target="_blank" rel="noopener">#28053</a> (900°F/482°C)</td>
+        </tr>
+        <tr>
+          <td>Inox duplex<br><small>Duplex stainless</small></td>
+          <td class="td-temp">≤ 150°C<br><small>≤ 302°F</small></td>
+          <td>API, NORSOK</td>
+          <td>Duy trì cân bằng pha γ/α — quá nhiệt gây sigma phase</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28318-302f-150c/" target="_blank" rel="noopener">#28318</a> (302°F/150°C)</td>
+        </tr>
+        <tr>
+          <td>Inox austenitic 304/316<br><small>Austenitic stainless</small></td>
+          <td class="td-temp">≤ 175°C<br><small>≤ 347°F</small></td>
+          <td>ASME</td>
+          <td>Giảm nguy cơ sensitization (carbide precipitation tại HAZ)</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28025-294f-146c/" target="_blank" rel="noopener">#28025</a> (294°F/146°C)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
+<figure class="blog-img-wrap" style="margin:1.8rem 0">
+  <img src="/assets/images/tempilstik_do_nhiet_do_preheat_han_ong_cong_truong.webp" alt="Kiểm tra interpass temperature bằng Tempilstik® theo bảng tra tiêu chuẩn hàn" class="blog-img-full" loading="lazy" width="800" height="450">
+  <figcaption class="blog-img-caption">Bảng tra preheat theo AWS D1.1, ASME B31.3 và API 1104 — áp dụng trực tiếp vào hiện trường bằng Tempilstik® có mức nhiệt tương ứng.</figcaption>
+</figure>
+
+
+  <h2>Quy đổi nhanh °C ↔ °F — Quick Conversion</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>°C</th><th>°F</th><th>Tempilstik® Part No.</th>
+          <th>°C</th><th>°F</th><th>Tempilstik® Part No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="td-temp">38°C</td><td class="td-temp">100°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28000-100f-38c/" target="_blank" rel="noopener">#28000</a></td><td class="td-temp">177°C</td><td class="td-temp">350°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28025-294f-146c/" target="_blank" rel="noopener">#28025</a></td></tr>
+        <tr><td class="td-temp">50°C</td><td class="td-temp">122°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28002-109f-43c/" target="_blank" rel="noopener">#28002</a></td><td class="td-temp">193°C</td><td class="td-temp">380°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28030-344f-173c/" target="_blank" rel="noopener">#28030</a></td></tr>
+        <tr><td class="td-temp">66°C</td><td class="td-temp">150°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28006-150f-66c/" target="_blank" rel="noopener">#28006</a></td><td class="td-temp">200°C</td><td class="td-temp">392°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a></td></tr>
+        <tr><td class="td-temp">79°C</td><td class="td-temp">175°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28009-175f-79c/" target="_blank" rel="noopener">#28009</a></td><td class="td-temp">232°C</td><td class="td-temp">450°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28039-450f-232c/" target="_blank" rel="noopener">#28039</a></td></tr>
+        <tr><td class="td-temp">100°C</td><td class="td-temp">212°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28016-225f-107c/" target="_blank" rel="noopener">#28016</a></td><td class="td-temp">260°C</td><td class="td-temp">500°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28043-500f-260c/" target="_blank" rel="noopener">#28043</a></td></tr>
+        <tr><td class="td-temp">110°C</td><td class="td-temp">230°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28312-230f-110c/" target="_blank" rel="noopener">#28312</a></td><td class="td-temp">300°C</td><td class="td-temp">572°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28053-900f-482c/" target="_blank" rel="noopener">#28053</a></td></tr>
+        <tr><td class="td-temp">121°C</td><td class="td-temp">250°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28019-250f-121c/" target="_blank" rel="noopener">#28019</a></td><td class="td-temp">316°C</td><td class="td-temp">600°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28047-600f-316c/" target="_blank" rel="noopener">#28047</a></td></tr>
+        <tr><td class="td-temp">150°C</td><td class="td-temp">302°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28318-302f-150c/" target="_blank" rel="noopener">#28318</a></td><td class="td-temp">371°C</td><td class="td-temp">700°F</td><td class="td-part"><a href="https://tempil.vn/tempilstik/28057-1022f-550c/" target="_blank" rel="noopener">#28057</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Xem đầy đủ 116 part numbers từ 100°F đến 2000°F tại <a href="https://tempil.vn/tempilstik/">trang sản phẩm Tempilstik® trên tempil.vn</a>.</p>
+
+  <h2>Câu hỏi thường gặp</h2>
+
+  <div class="faq-item">
+    <p class="faq-q">Khi WPS quy định một dải nhiệt độ (ví dụ 100–200°C), cần dùng Tempilstik® nào?</p>
+    <p class="faq-a">Cần hai que: một que ở nhiệt độ tối thiểu (100°C) để xác nhận đã đủ preheat, và một que ở nhiệt độ tối đa (200°C) nếu là kiểm tra interpass để xác nhận không vượt ngưỡng. Đây là thực hành phổ biến trong hàn đường ống dầu khí — inspector mang theo 2 que cho mỗi điểm kiểm tra.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Tiêu chuẩn nào ưu tiên khi dự án áp dụng nhiều tiêu chuẩn cùng lúc?</p>
+    <p class="faq-a">Ưu tiên theo thứ tự: (1) Hợp đồng dự án và Purchase Order specification, (2) WPS đã được phê duyệt bởi chủ đầu tư hoặc third party inspector, (3) Tiêu chuẩn được dẫn chiếu trong WPS. Khi các tiêu chuẩn xung đột, yêu cầu khắt khe hơn luôn được áp dụng (the more stringent requirement governs).</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Nhiệt độ môi trường ảnh hưởng thế nào đến preheat?</p>
+    <p class="faq-a">Nhiệt độ môi trường thấp làm bề mặt thép mất nhiệt nhanh hơn sau khi gia nhiệt — cần gia nhiệt lâu hơn để đạt và duy trì nhiệt độ yêu cầu. Ở nhiệt độ môi trường dưới 5°C, AWS D1.1 và ASME đều khuyến nghị gia nhiệt tối thiểu đến 20°C ngay cả khi tiêu chuẩn không yêu cầu preheat chính thức. Với công trình offshore tại Vũng Tàu, môi trường thường 25–35°C nên ít ảnh hưởng — nhưng trong mùa khô gió mạnh, bề mặt mất nhiệt nhanh hơn đáng kể.</p>
+  </div>
+
+  <div class="cta-block">
+    <p>Cần tư vấn chọn đúng Tempilstik® part number theo WPS dự án? Gọi hoặc Zalo cho chuyên gia kỹ thuật của tempil.vn — 10+ năm kinh nghiệm O&G và hàn kết cấu tại Việt Nam.</p>
+    <a href="https://tempil.vn/bao-gia/" class="btn-primary-red">Yêu cầu báo giá</a>
+    <a href="tel:0938888958" class="btn-outline-dark">0938 888 958</a>
+  </div>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Khi WPS quy định một dải nhiệt độ preheat, cần dùng Tempilstik® nào?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cần hai que: một que ở nhiệt độ tối thiểu để xác nhận đã đủ preheat, và một que ở nhiệt độ tối đa nếu là kiểm tra interpass để xác nhận không vượt ngưỡng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tiêu chuẩn nào ưu tiên khi dự án áp dụng nhiều tiêu chuẩn cùng lúc?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ưu tiên theo thứ tự: (1) Hợp đồng và Purchase Order specification, (2) WPS đã được phê duyệt, (3) Tiêu chuẩn được dẫn chiếu trong WPS. Khi các tiêu chuẩn xung đột, yêu cầu khắt khe hơn luôn được áp dụng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Nhiệt độ interpass tối đa cho thép P91 là bao nhiêu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thép P91 (A335 Gr.P91) có nhiệt độ interpass tối đa ≤ 300°C (572°F) theo ASME B31.3 và EN 1011-2. Vượt ngưỡng này gây phân huỷ carbide làm suy giảm creep strength. Dùng Tempilstik® #28053 (900°F/482°C) để kiểm tra không vượt ngưỡng."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://tempil.com.vn/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog kỹ thuật", "item": "https://tempil.com.vn/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Bảng tra nhiệt độ preheat theo loại thép", "item": "https://tempil.com.vn/blog/bang-tra-nhiet-do-preheat-theo-loai-thep/"}
+  ]
+}
+</script>
+
+</body>
+</html>

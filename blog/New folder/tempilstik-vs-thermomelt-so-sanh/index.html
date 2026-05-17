@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempilstik® vs Thermomelt® — So Sánh Chi Tiết Để Chọn Đúng</title>
+  <meta name="description" content="So sánh Tempilstik® và Thermomelt® theo 10 tiêu chí kỹ thuật: kích thước, độ chính xác, NIST Traceable, ứng dụng preheat/PWHT và khi nào nên dùng loại nào.">
+  <style>
+    /* Blog article layout */
+    .blog-article {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem);
+      font-family: var(--font-body, 'Manrope', 'Segoe UI', sans-serif);
+      color: #3D405B;
+      line-height: 1.75;
+      font-size: 1rem;
+    }
+
+    .blog-article h1 {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 600;
+      color: #1a0a0a;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+
+    .blog-article h2 {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+      font-weight: 600;
+      color: #1a0a0a;
+      margin-top: 2.75rem;
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #c8102e;
+      line-height: 1.3;
+    }
+
+    .blog-article h3 {
+      font-family: var(--font-heading, 'Lora', Georgia, serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1a0a0a;
+      margin-top: 1.75rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .blog-article p {
+      margin-bottom: 1.1rem;
+      font-size: 0.97rem;
+    }
+
+    .blog-article a {
+      color: #c8102e;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .blog-article a:hover { color: #a50e26; }
+
+    .blog-article ul.article-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.25rem;
+    }
+    .blog-article ul.article-list li {
+      position: relative;
+      padding: 0.55rem 0 0.55rem 1.6rem;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.95rem;
+      color: #3D405B;
+      line-height: 1.65;
+    }
+    .blog-article ul.article-list li:last-child { border-bottom: none; }
+    .blog-article ul.article-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1.05rem;
+      width: 8px;
+      height: 8px;
+      background: #c8102e;
+      border-radius: 50%;
+    }
+
+    .blog-article .table-wrap {
+      overflow-x: auto;
+      margin: 1.25rem 0 1.75rem;
+      border-radius: 10px;
+      border: 1px solid #eee;
+    }
+    .blog-article table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-body, 'Manrope', sans-serif);
+      font-size: 0.855rem;
+    }
+    .blog-article table thead th {
+      background: #c8102e;
+      color: #fff;
+      padding: 0.65rem 1rem;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .blog-article table tbody tr:nth-child(even) { background: #fafafa; }
+    .blog-article table tbody tr:hover { background: #fff0f2; }
+    .blog-article table td {
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid #f0f0f0;
+      color: #3D405B;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .blog-article table td.td-part {
+      font-weight: 700;
+      font-family: 'Courier New', monospace;
+      color: #c8102e;
+      font-size: 0.88rem;
+      white-space: nowrap;
+    }
+    .blog-article table td.td-temp { font-weight: 600; white-space: nowrap; }
+    .blog-article table td.td-ok { color: #27ae60; font-weight: 600; }
+    .blog-article table td.td-na { color: #999; font-style: italic; font-size: 0.82rem; }
+    .blog-article table td.td-highlight { background: rgba(200,16,46,0.05); font-weight: 700; }
+
+    .blog-article .callout {
+      background: #fff8f8;
+      border-left: 3px solid #c8102e;
+      border-radius: 0 8px 8px 0;
+      padding: 0.85rem 1.1rem;
+      margin: 1.25rem 0;
+      font-size: 0.9rem;
+      color: #3D405B;
+    }
+    .blog-article .callout strong { color: #c8102e; }
+
+    .blog-article .callout--info {
+      background: #f0f4ff;
+      border-left-color: #3D405B;
+    }
+    .blog-article .callout--info strong { color: #3D405B; }
+
+    .blog-article .callout--green {
+      background: #f0fff4;
+      border-left-color: #27ae60;
+    }
+    .blog-article .callout--green strong { color: #27ae60; }
+
+    .blog-article .faq-item {
+      border-bottom: 1px solid #eee;
+      padding: 1rem 0;
+    }
+    .blog-article .faq-item:last-child { border-bottom: none; }
+    .blog-article .faq-q {
+      font-weight: 700;
+      font-size: 0.97rem;
+      color: #1a0a0a;
+      margin-bottom: 0.45rem;
+    }
+    .blog-article .faq-a {
+      font-size: 0.93rem;
+      color: #555;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .blog-article .cta-block {
+      background: #1a0a0a;
+      border-radius: 14px;
+      padding: 1.75rem 2rem;
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+    .blog-article .cta-block p {
+      color: rgba(244,241,222,0.75);
+      font-size: 0.92rem;
+      margin-bottom: 1.25rem;
+    }
+    .blog-article .cta-block .btn-primary-red {
+      display: inline-block;
+      background: #c8102e;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background 0.2s;
+      font-family: var(--font-body, 'Manrope', sans-serif);
+      margin: 0.3rem;
+    }
+    .blog-article .cta-block .btn-primary-red:hover { background: #a50e26; }
+    .blog-article .cta-block .btn-outline-dark {
+      display: inline-block;
+      background: transparent;
+      color: rgba(244,241,222,0.85);
+      border: 1.5px solid rgba(244,241,222,0.35);
+      padding: 0.8rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      font-family: var(--font-body, 'Manrope', sans-serif);
+      margin: 0.3rem;
+      transition: border-color 0.2s;
+    }
+    .blog-article .cta-block .btn-outline-dark:hover {
+      border-color: rgba(244,241,222,0.8);
+      color: #fff;
+    }
+  </style>
+
+  <!-- SEO dates — auto-generated by blog_manager.py -->
+  <meta property="article:published_time" content="2025-04-14T08:00:00+07:00">
+  <meta property="article:modified_time" content="2025-04-14T08:00:00+07:00">
+  <link rel="canonical" href="https://tempil.com.vn/blog/tempilstik-vs-thermomelt-so-sanh/">
+</head>
+<body>
+<article class="blog-article">
+
+  <h1>Tempilstik® vs Thermomelt® — So Sánh Chi Tiết Để Chọn Đúng Loại Chỉ Thị Nhiệt</h1>
+
+  <p>Tempilstik® và Thermomelt® đều là sản phẩm chỉ thị nhiệt độ dạng sáp rắn của Tempil® (nay thuộc Illinois Tool Works — ITW), sản xuất tại USA. Cả hai hoạt động theo cùng nguyên lý: chạm vào bề mặt kim loại nóng — nếu que tan chảy, nhiệt độ bề mặt đã đạt mức đó. Nhưng cả hai không phải là một: kích thước thân khác nhau, phạm vi ứng dụng khác nhau, và mức độ truy xuất tiêu chuẩn quốc gia cũng khác nhau. Chọn sai không gây hại kỹ thuật, nhưng có thể gây bất tiện thực tế hoặc không đáp ứng yêu cầu tài liệu của dự án.</p>
+
+  
+<figure class="blog-img-wrap" style="margin:1.8rem 0">
+  <img src="/assets/images/thermomelt_que_chi_thi_nhiet_do_han_1.webp" alt="Que Thermomelt® chỉ thị nhiệt độ hàn — so sánh với Tempilstik® Made in USA" class="blog-img-full" loading="lazy" width="800" height="450">
+  <figcaption class="blog-img-caption">Thermomelt® và Tempilstik® đều là sản phẩm chỉ thị nhiệt độ của Tempil/ITW. Sự khác biệt chính: Thermomelt® lớn hơn, dễ cầm với găng hàn dày; Tempilstik® nhỏ gọn, thao tác nhanh.</figcaption>
+</figure>
+
+
+  <h2>Điểm Khác Biệt Cốt Lõi: Kích Thước và Cách Cầm</h2>
+
+  <p>Thermomelt® lớn hơn Tempilstik® khoảng <strong>33% về thể tích</strong>. Thân Thermomelt® dày hơn và nặng tay hơn, thiết kế phù hợp với người đang đeo găng tay hàn dày — ngón tay bị găng bọc khó thao tác với vật mảnh. Trong điều kiện PWHT diện rộng (ủ nhiệt cả đoạn ống hoặc tấm lớn), người vận hành thường đứng xa, cần đưa tay qua vùng nhiệt cao để chạm bề mặt; thân dày của Thermomelt® giúp giảm nguy cơ tuột tay.</p>
+
+  <p>Tempilstik® nhỏ và mảnh hơn, phù hợp để đo điểm cục bộ (spot measurement) và thao tác trong không gian hẹp — khe hở giữa các ống, góc kết cấu, vị trí khó tiếp cận. Đây là lý do Tempilstik® phổ biến hơn trong kiểm tra <a href="https://tempil.com.vn/blog/nhiet-do-preheat-khi-han-thep-carbon/">preheat</a> hàng ngày trên công trường: nhỏ gọn, dễ bỏ túi, dễ thao tác với một tay.</p>
+
+  <div class="callout">
+    <strong>Lưu ý thực tế:</strong> Thermomelt® tiêu hao nhanh hơn nếu dùng để đo điểm nhỏ vì thân lớn — lãng phí khi chỉ cần một vết chạm. Tempilstik® tiêu hao ít hơn trên mỗi lần đo, phù hợp khi cần đo nhiều điểm trong ca làm việc.
+  </div>
+
+  <h2>NIST Traceable — Khi Nào Điều Này Quan Trọng</h2>
+
+  <p>Đây là điểm phân biệt quan trọng nhất về tài liệu kỹ thuật. <strong>Thermomelt® là NIST Traceable</strong> — có nghĩa là độ chính xác của sản phẩm có thể truy xuất ngược về chuẩn đo lường quốc gia Hoa Kỳ (National Institute of Standards and Technology). Thermomelt® đi kèm Certificate of Conformance có ghi rõ số lô sản xuất và khả năng truy xuất chuẩn.</p>
+
+  <p>Điều này không có nghĩa Tempilstik® kém chính xác hơn — cả hai đều đạt dung sai <strong>±1%°F / ±3%°C</strong>. Nhưng trong các dự án đòi hỏi tài liệu kiểm soát chất lượng nghiêm ngặt — <strong>nuclear, defense, aerospace, hoặc các dự án yêu cầu NIST Traceable documentation</strong> theo hợp đồng — thì Thermomelt® mới đáp ứng được yêu cầu đó về mặt hồ sơ.</p>
+
+  <p>Với phần lớn dự án dầu khí, kết cấu offshore, nhà máy điện tại Việt Nam theo AWS D1.1, ASME B31.1/B31.3 hoặc EN 1011-2 — Tempilstik® hoàn toàn đủ điều kiện, không cần trả thêm chi phí cho NIST Traceable documentation.</p>
+
+  <div class="img-row">
+    <div class="img-row-item">
+      <img src="/assets/images/thermomelt_que_chi_thi_nhiet_han_nhieu_muc_2.webp" alt="Thermomelt® nhiều mức nhiệt độ" loading="lazy" width="400" height="300">
+      <p>Thermomelt® — nhiều dải nhiệt</p>
+    </div>
+    <div class="img-row-item">
+      <img src="/assets/images/thermomelt_heatstik_que_chi_thi_nhiet_lo_nung_pwht_1.webp" alt="Thermomelt® Heatstik cho lò nung và PWHT" loading="lazy" width="400" height="300">
+      <p>Heatstik® cho lò nung/PWHT</p>
+    </div>
+    <div class="img-row-item">
+      <img src="/assets/images/tempilstik_but_do_nhiet_do_han_1.webp" alt="Tempilstik® nhỏ gọn" loading="lazy" width="400" height="300">
+      <p>Tempilstik® nhỏ gọn</p>
+    </div>
+</div>
+
+  <h2>Bảng So Sánh 10 Tiêu Chí</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Tiêu chí</th>
+          <th>Tempilstik®</th>
+          <th>Thermomelt®</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thân/kích thước</td>
+          <td>Nhỏ, mảnh — tương đương bút chì lớn</td>
+          <td>Lớn hơn ~33% — thân dày, dễ cầm với găng hàn</td>
+        </tr>
+        <tr>
+          <td>Độ chính xác</td>
+          <td class="td-temp">±1%°F / ±3%°C</td>
+          <td class="td-temp">±1%°F / ±3%°C</td>
+        </tr>
+        <tr>
+          <td>NIST Traceable</td>
+          <td class="td-na">Không</td>
+          <td class="td-ok">Có — kèm C/C theo lô</td>
+        </tr>
+        <tr>
+          <td>Lead-Free / Sulfur-Free</td>
+          <td class="td-ok">Có (từ 2012)</td>
+          <td class="td-ok">Có</td>
+        </tr>
+        <tr>
+          <td>Series part number</td>
+          <td>28xxx</td>
+          <td>86xxx</td>
+        </tr>
+        <tr>
+          <td>Ứng dụng điển hình</td>
+          <td>Preheat, interpass, kiểm tra lò sấy que</td>
+          <td>PWHT diện rộng, nuclear, defense, aerospace</td>
+        </tr>
+        <tr>
+          <td>Thao tác với găng dày</td>
+          <td>Khó hơn — thân mảnh dễ tuột</td>
+          <td class="td-ok">Dễ hơn — thân dày, bám tốt</td>
+        </tr>
+        <tr>
+          <td>Phù hợp đo điểm nhỏ</td>
+          <td class="td-ok">Tốt — tiêu hao ít mỗi lần đo</td>
+          <td>Lãng phí — thân lớn tiêu hao nhiều</td>
+        </tr>
+        <tr>
+          <td>Tiêu chuẩn được công nhận</td>
+          <td>AWS D1.1, ASME I/III/VIII, B31.1, B31.3, API 1104, EN 1011-2</td>
+          <td>AWS D1.1, ASME I/III/VIII, B31.1, B31.3, thêm nuclear/defense specs</td>
+        </tr>
+        <tr>
+          <td>Giá / chi phí</td>
+          <td>Thấp hơn</td>
+          <td>Cao hơn (do NIST Traceable documentation)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Bảng Đối Chiếu Part Number Tương Đương</h2>
+
+  <p>Thermomelt® và Tempilstik® có nhiệt độ chỉ thị trùng nhau ở nhiều mức. Dưới đây là các cặp tương đương thường dùng trong ngành hàn và xử lý nhiệt:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Nhiệt độ</th>
+          <th>Tempilstik® Part No.</th>
+          <th>Thermomelt® Part No.</th>
+          <th>Ứng dụng phổ biến</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-temp">121°C / 250°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28019-250f-121c/" target="_blank" rel="noopener">#28019</a></td>
+          <td class="td-part"><a href="https://tempil.vn/thermomelt/86562-250f-121c/" target="_blank" rel="noopener">#86562</a></td>
+          <td>Kiểm tra lò sấy que hàn E7018</td>
+        </tr>
+        <tr>
+          <td class="td-temp">150°C / 302°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28318-302f-150c/" target="_blank" rel="noopener">#28318</a></td>
+          <td>—</td>
+          <td>Interpass tối đa duplex SS, P11</td>
+        </tr>
+        <tr>
+          <td class="td-temp">177°C / 350°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28025-294f-146c/" target="_blank" rel="noopener">#28025</a></td>
+          <td>—</td>
+          <td>Low-temperature stress relief</td>
+        </tr>
+        <tr>
+          <td class="td-temp">200°C / 392°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a></td>
+          <td>—</td>
+          <td>Preheat P22, P91 tối thiểu</td>
+        </tr>
+        <tr>
+          <td class="td-temp">316°C / 600°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28047-600f-316c/" target="_blank" rel="noopener">#28047</a></td>
+          <td>—</td>
+          <td>PWHT thép carbon (spot check)</td>
+        </tr>
+        <tr>
+          <td class="td-temp">427°C / 800°F</td>
+          <td class="td-part"><a href="https://tempil.vn/tempilstik/28065-1450f-788c/" target="_blank" rel="noopener">#28065</a></td>
+          <td>—</td>
+          <td>PWHT P91 — xác nhận đạt ngưỡng dưới</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout--info callout">
+    <strong>Lưu ý:</strong> Tempil® không sản xuất Thermomelt® cho toàn bộ dải nhiệt độ như Tempilstik®. Một số mức nhiệt độ đặc thù (ví dụ <a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a> — 200°C/392°F cho preheat P91) chỉ có trong dòng Tempilstik®. Khi cần part number cụ thể không có trong Thermomelt®, Tempilstik® là lựa chọn duy nhất.
+  </div>
+
+  
+<figure class="blog-img-wrap" style="margin:1.8rem 0">
+  <img src="/assets/images/thermomelt_heatstik_chay_trong_lo_nung_kiem_soat_pwht.webp" alt="Thermomelt® Heatstik tan chảy trong lò nung — kiểm soát nhiệt độ PWHT" class="blog-img-full" loading="lazy" width="800" height="450">
+  <figcaption class="blog-img-caption">Thermomelt® Heatstik thiết kế đặc biệt cho lò nung và PWHT — cầm dễ với găng hàn dày, đặt vào lò theo dõi nhiệt độ mà không cần tiếp xúc trực tiếp bề mặt chi tiết.</figcaption>
+</figure>
+
+
+  <h2>Kết Luận: Dùng Loại Nào Khi Nào</h2>
+
+  <p>Câu trả lời phụ thuộc vào <strong>ba yếu tố</strong>: yêu cầu tài liệu của dự án, điều kiện sử dụng thực tế, và dải nhiệt độ cần đo.</p>
+
+  <p><strong>Dùng Tempilstik®</strong> khi:</p>
+  <ul class="article-list">
+    <li>Kiểm tra <a href="https://tempil.com.vn/blog/nhiet-do-preheat-khi-han-thep-carbon/">preheat</a> hàng ngày theo AWS D1.1 hoặc ASME B31.1/B31.3</li>
+    <li>Kiểm tra <a href="https://tempil.com.vn/blog/interpass-temperature-la-gi/">interpass temperature</a> giữa các lớp hàn</li>
+    <li>Kiểm tra nhiệt độ lò sấy que hàn E7016/E7018</li>
+    <li>Đo điểm cục bộ, không gian hẹp, nhiều lần đo trong ca</li>
+    <li>Dự án thương mại, công nghiệp, offshore thông thường — không yêu cầu NIST Traceable documentation</li>
+  </ul>
+
+  <p><strong>Dùng Thermomelt®</strong> khi:</p>
+  <ul class="article-list">
+    <li>Dự án yêu cầu NIST Traceable documentation theo điều khoản hợp đồng</li>
+    <li>PWHT diện rộng với người vận hành đeo găng tay hàn dày loại nặng</li>
+    <li>Dự án nuclear, defense, aerospace — nơi truy xuất chuẩn quốc gia là bắt buộc</li>
+    <li>Cần tài liệu C/C theo lô sản xuất cho hồ sơ QA của third party inspector</li>
+  </ul>
+
+  <div class="callout--green callout">
+    <strong>Thực tế tại Việt Nam:</strong> Phần lớn dự án EPC, offshore, nhà máy điện tại Việt Nam không yêu cầu NIST Traceable ở cấp chỉ thị nhiệt cầm tay — yêu cầu đó thường áp dụng cho thiết bị đo lường hiệu chuẩn định kỳ (thermocouple, datalogger). Tempilstik® đáp ứng đủ cho hơn 95% nhu cầu thực tế tại các dự án O&G và kết cấu tại Vũng Tàu và TPHCM.
+  </div>
+
+  <h2>Câu Hỏi Thường Gặp</h2>
+
+  <div class="faq-item">
+    <p class="faq-q">Thermomelt® có chính xác hơn Tempilstik® không?</p>
+    <p class="faq-a">Không. Cả hai cùng đạt dung sai ±1%°F / ±3%°C — giống nhau hoàn toàn về độ chính xác kỹ thuật. Sự khác biệt là Thermomelt® có tài liệu truy xuất chuẩn NIST (NIST Traceable), không phải thiết bị đo chính xác hơn về bản chất vật lý.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Dự án ASME Section VIII của tôi có cần Thermomelt® không?</p>
+    <p class="faq-a">ASME Section VIII (thiết bị áp lực) không bắt buộc NIST Traceable cho dụng cụ chỉ thị nhiệt cầm tay. Tempilstik® được công nhận đầy đủ theo ASME Code. Chỉ khi hợp đồng hoặc client specification ghi rõ "NIST Traceable temperature indicating device" thì mới cần Thermomelt®.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Tempilstik® và Thermomelt® có thể dùng cho cùng một nhiệt độ không?</p>
+    <p class="faq-a">Có, ở nhiều mức nhiệt độ. Ví dụ: Tempilstik® <a href="https://tempil.vn/tempilstik/28019-250f-121c/" target="_blank" rel="noopener">#28019</a> (250°F/121°C) và Thermomelt® <a href="https://tempil.vn/thermomelt/86562-250f-121c/" target="_blank" rel="noopener">#86562</a> (250°F/121°C) cho kết quả kiểm tra như nhau. Tuy nhiên, không phải mọi mức nhiệt độ trong Tempilstik® đều có bản tương đương trong Thermomelt® — một số mức như 200°C/392°F (<a href="https://tempil.vn/tempilstik/28327-392f-200c/" target="_blank" rel="noopener">#28327</a>) chỉ có trong dòng Tempilstik®.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Tại Việt Nam có mua được Thermomelt® không?</p>
+    <p class="faq-a">Có. Fast Group (tempil.vn) là nhà phân phối chính hãng Tempil® tại Việt Nam, có thể cung cấp cả Tempilstik® và Thermomelt® kèm C/O (Certificate of Origin) và C/Q (Certificate of Quality) gốc từ nhà sản xuất. Liên hệ để hỏi sẵn kho và lead time cho series 86xxx.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Tempilstik® có cần hiệu chuẩn định kỳ không?</p>
+    <p class="faq-a">Không. Que chỉ thị nhiệt dạng sáp không cần hiệu chuẩn định kỳ — không giống thermocouple hay IR thermometer. Chỉ cần bảo quản đúng cách: tránh nhiệt độ cao (trên 30–35°C), tránh va đập làm gãy que, và sử dụng trước ngày hết hạn in trên hộp. Tham khảo thêm tại <a href="https://tempil.com.vn/blog/que-chi-thi-nhiet-tempilstik-la-gi/">hướng dẫn sử dụng Tempilstik®</a>.</p>
+  </div>
+
+  <div class="cta-block">
+    <p>Cần tư vấn chọn Tempilstik® hay Thermomelt® cho dự án? tempil.vn là nhà phân phối chính hãng Tempil® tại Việt Nam — C/O, C/Q, hóa đơn VAT đầy đủ. Bán lẻ từng que và theo hộp 10 que.</p>
+    <a href="https://tempil.vn/bao-gia/" class="btn-primary-red">Yêu cầu báo giá</a>
+    <a href="tel:0938888958" class="btn-outline-dark">0938 888 958</a>
+  </div>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Thermomelt® có chính xác hơn Tempilstik® không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không. Cả hai cùng đạt dung sai ±1%°F / ±3%°C — giống nhau hoàn toàn về độ chính xác kỹ thuật. Sự khác biệt là Thermomelt® có tài liệu truy xuất chuẩn NIST (NIST Traceable), không phải thiết bị đo chính xác hơn về bản chất vật lý."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dự án ASME Section VIII có cần Thermomelt® không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ASME Section VIII không bắt buộc NIST Traceable cho dụng cụ chỉ thị nhiệt cầm tay. Tempilstik® được công nhận đầy đủ theo ASME Code. Chỉ khi hợp đồng hoặc client specification ghi rõ NIST Traceable temperature indicating device thì mới cần Thermomelt®."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tempilstik® và Thermomelt® có thể dùng cho cùng một nhiệt độ không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có, ở nhiều mức nhiệt độ. Ví dụ Tempilstik® #28019 (250°F/121°C) và Thermomelt® #86562 (250°F/121°C) cho kết quả như nhau. Tuy nhiên không phải mọi mức nhiệt độ trong Tempilstik® đều có bản tương đương trong Thermomelt® — một số mức như 200°C/392°F (#28327) chỉ có trong dòng Tempilstik®."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tại Việt Nam có mua được Thermomelt® không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có. Fast Group (tempil.vn) là nhà phân phối chính hãng Tempil® tại Việt Nam, có thể cung cấp cả Tempilstik® và Thermomelt® kèm C/O và C/Q gốc từ nhà sản xuất."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tempilstik® có cần hiệu chuẩn định kỳ không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không. Que chỉ thị nhiệt dạng sáp không cần hiệu chuẩn định kỳ. Chỉ cần bảo quản đúng cách: tránh nhiệt độ cao trên 30–35°C, tránh va đập làm gãy que, và sử dụng trước ngày hết hạn in trên hộp."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://tempil.com.vn/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog kỹ thuật", "item": "https://tempil.com.vn/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Tempilstik® vs Thermomelt® — So Sánh Chi Tiết", "item": "https://tempil.com.vn/blog/tempilstik-vs-thermomelt-so-sanh/"}
+  ]
+}
+</script>
+
+</body>
+</html>
