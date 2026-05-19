@@ -1,0 +1,29 @@
+# tempil.com.vn → tempil.vn — 301 Redirects (Cloudflare Pages / Netlify)
+
+/blog/asme-b31-3-nhiet-do-preheat-ong-ap-luc/         https://tempil.vn/blog/asme-b31-3-nhiet-do-preheat-ong-ap-luc/         301
+/blog/bang-tra-nhiet-do-preheat-theo-loai-thep/        https://tempil.vn/blog/bang-tra-nhiet-do-preheat-theo-loai-thep/        301
+/blog/faq-tempilstik/                                  https://tempil.vn/blog/faq-tempilstik/                                   301
+/blog/han-thep-p91-crmo-nhiet-do-270c/                 https://tempil.vn/blog/han-thep-p91-crmo-nhiet-do-270c/                  301
+/blog/interpass-temperature-la-gi/                     https://tempil.vn/blog/interpass-temperature-la-gi/                      301
+/blog/nhiet-do-preheat-khi-han-thep-carbon/            https://tempil.vn/blog/nhiet-do-preheat-khi-han-thep-carbon/             301
+/blog/nhiet-do-tien-han-theo-aws-d1-1/                 https://tempil.vn/blog/nhiet-do-tien-han-theo-aws-d1-1/                  301
+/blog/preheat-electrode-7018-nhiet-do/                 https://tempil.vn/blog/preheat-electrode-7018-nhiet-do/                  301
+/blog/pwht-xu-ly-nhiet-sau-han/                        https://tempil.vn/blog/pwht-xu-ly-nhiet-sau-han/                         301
+/blog/stress-relieving-nhiet-do-190-210c/              https://tempil.vn/blog/stress-relieving-nhiet-do-190-210c/               301
+/blog/tempilstik-66c-150f-han-thep-ket-cau/            https://tempil.vn/blog/tempilstik-66c-150f-han-thep-ket-cau/             301
+/blog/tempilstik-chinh-hang-made-in-usa/               https://tempil.vn/blog/tempilstik-chinh-hang-made-in-usa/                301
+/blog/tempilstik-la-gi-huong-dan-su-dung/              https://tempil.vn/blog/tempilstik-la-gi-huong-dan-su-dung/               301
+/blog/tempilstik-la-gi-huong-dan-su-dung-o-Viet-nam/  https://tempil.vn/blog/tempilstik-la-gi-huong-dan-su-dung-o-Viet-nam/   301
+/blog/tempilstik-nha-may-nhiet-dien/                   https://tempil.vn/blog/tempilstik-nha-may-nhiet-dien/                    301
+/blog/tempilstik-vs-nhiet-ke-laser/                    https://tempil.vn/blog/tempilstik-vs-nhiet-ke-laser/                     301
+/blog/tempilstik-vs-sung-hong-ngoai/                   https://tempil.vn/blog/tempilstik-vs-sung-hong-ngoai/                    301
+/blog/tempilstik-vs-thermomelt-so-sanh/                https://tempil.vn/blog/tempilstik-vs-thermomelt-so-sanh/                 301
+/blog/tieu-chuan-en-1011-2-nhiet-do-han/               https://tempil.vn/blog/tieu-chuan-en-1011-2-nhiet-do-han/                301
+/blog/ung-dung-tempilstik-nganh-han/                   https://tempil.vn/blog/ung-dung-tempilstik-nganh-han/                    301
+/san-pham/tempilstik/  https://tempil.vn/tempilstik/   301
+/san-pham/tempilaq/    https://tempil.vn/tempilaq/     301
+/san-pham/tempilabel/  https://tempil.vn/tempilabel/   301
+/san-pham/thermomelt/  https://tempil.vn/thermomelt/   301
+/san-pham/             https://tempil.vn/              301
+/                      https://tempil.vn/              301
+/*                     https://tempil.vn/:splat        301

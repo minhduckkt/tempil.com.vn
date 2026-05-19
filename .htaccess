@@ -1,0 +1,37 @@
+# tempil.com.vn — 301 Permanent Redirects to tempil.vn
+# Upload to root of tempil.com.vn server if running Apache
+
+Options -Indexes
+RewriteEngine On
+
+# Blog posts
+RewriteRule ^blog/asme-b31-3-nhiet-do-preheat-ong-ap-luc/?$ https://tempil.vn/blog/asme-b31-3-nhiet-do-preheat-ong-ap-luc/ [R=301,L]
+RewriteRule ^blog/bang-tra-nhiet-do-preheat-theo-loai-thep/?$ https://tempil.vn/blog/bang-tra-nhiet-do-preheat-theo-loai-thep/ [R=301,L]
+RewriteRule ^blog/faq-tempilstik/?$ https://tempil.vn/blog/faq-tempilstik/ [R=301,L]
+RewriteRule ^blog/han-thep-p91-crmo-nhiet-do-270c/?$ https://tempil.vn/blog/han-thep-p91-crmo-nhiet-do-270c/ [R=301,L]
+RewriteRule ^blog/interpass-temperature-la-gi/?$ https://tempil.vn/blog/interpass-temperature-la-gi/ [R=301,L]
+RewriteRule ^blog/nhiet-do-preheat-khi-han-thep-carbon/?$ https://tempil.vn/blog/nhiet-do-preheat-khi-han-thep-carbon/ [R=301,L]
+RewriteRule ^blog/nhiet-do-tien-han-theo-aws-d1-1/?$ https://tempil.vn/blog/nhiet-do-tien-han-theo-aws-d1-1/ [R=301,L]
+RewriteRule ^blog/preheat-electrode-7018-nhiet-do/?$ https://tempil.vn/blog/preheat-electrode-7018-nhiet-do/ [R=301,L]
+RewriteRule ^blog/pwht-xu-ly-nhiet-sau-han/?$ https://tempil.vn/blog/pwht-xu-ly-nhiet-sau-han/ [R=301,L]
+RewriteRule ^blog/stress-relieving-nhiet-do-190-210c/?$ https://tempil.vn/blog/stress-relieving-nhiet-do-190-210c/ [R=301,L]
+RewriteRule ^blog/tempilstik-66c-150f-han-thep-ket-cau/?$ https://tempil.vn/blog/tempilstik-66c-150f-han-thep-ket-cau/ [R=301,L]
+RewriteRule ^blog/tempilstik-chinh-hang-made-in-usa/?$ https://tempil.vn/blog/tempilstik-chinh-hang-made-in-usa/ [R=301,L]
+RewriteRule ^blog/tempilstik-la-gi-huong-dan-su-dung/?$ https://tempil.vn/blog/tempilstik-la-gi-huong-dan-su-dung/ [R=301,L]
+RewriteRule ^blog/tempilstik-la-gi-huong-dan-su-dung-o-Viet-nam/?$ https://tempil.vn/blog/tempilstik-la-gi-huong-dan-su-dung-o-Viet-nam/ [R=301,L]
+RewriteRule ^blog/tempilstik-nha-may-nhiet-dien/?$ https://tempil.vn/blog/tempilstik-nha-may-nhiet-dien/ [R=301,L]
+RewriteRule ^blog/tempilstik-vs-nhiet-ke-laser/?$ https://tempil.vn/blog/tempilstik-vs-nhiet-ke-laser/ [R=301,L]
+RewriteRule ^blog/tempilstik-vs-sung-hong-ngoai/?$ https://tempil.vn/blog/tempilstik-vs-sung-hong-ngoai/ [R=301,L]
+RewriteRule ^blog/tempilstik-vs-thermomelt-so-sanh/?$ https://tempil.vn/blog/tempilstik-vs-thermomelt-so-sanh/ [R=301,L]
+RewriteRule ^blog/tieu-chuan-en-1011-2-nhiet-do-han/?$ https://tempil.vn/blog/tieu-chuan-en-1011-2-nhiet-do-han/ [R=301,L]
+RewriteRule ^blog/ung-dung-tempilstik-nganh-han/?$ https://tempil.vn/blog/ung-dung-tempilstik-nganh-han/ [R=301,L]
+
+# San-pham
+RewriteRule ^san-pham/tempilstik/?$ https://tempil.vn/tempilstik/ [R=301,L]
+RewriteRule ^san-pham/tempilaq/?$ https://tempil.vn/tempilaq/ [R=301,L]
+RewriteRule ^san-pham/tempilabel/?$ https://tempil.vn/tempilabel/ [R=301,L]
+RewriteRule ^san-pham/thermomelt/?$ https://tempil.vn/thermomelt/ [R=301,L]
+RewriteRule ^san-pham/?$ https://tempil.vn/ [R=301,L]
+
+# Catch-all
+RewriteRule ^(.*)$ https://tempil.vn/$1 [R=301,L]
